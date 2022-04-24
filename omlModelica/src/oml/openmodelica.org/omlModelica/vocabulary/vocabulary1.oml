@@ -1,0 +1,22 @@
+//@dc:title "Example Vocabulary"
+//@dc:creator "Example Company"
+//@dc:rights "Copyright 2019, by Example Company"
+vocabulary <http://openmodelica.org/omlModelica/vocabulary/vocabulary1#> as vocabulary1 {
+	
+	// The vocabulary bundle used by this description bundle	
+	extends <http://www.w3.org/2002/07/owl#>
+
+	// Example aspect
+	aspect A
+
+	// Example concept
+	concept C :> A
+
+	// Example relation entity
+	relation entity R [
+		from C
+		to A
+		forward r
+	]
+
+}

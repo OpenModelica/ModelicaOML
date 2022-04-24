@@ -1,0 +1,7 @@
+PREFIX vocabulary1:   <http://openmodelica.org/omlModelica/vocabulary/vocabulary1#>
+
+SELECT ?x ?y
+
+WHERE {
+	?x vocabulary1:r ?y
+}

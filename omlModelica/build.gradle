@@ -1,0 +1,222 @@
+/* 
+ * Dataset maven coordinates
+ */
+ext.title = "omlModelica"
+description='The OML Modelica ontology'
+group = 'io.opencaesar.ontologies'
+version = '0.1.0'
+
+apply from: "${rootDir}/gradle/maven-deployment.gradle"
+
+/* 
+ * The Gradle task dependencies 
+ */
+buildscript {
+    repositories {
+        mavenLocal()
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'io.opencaesar.owl:owl-fuseki-gradle:+'
+        classpath 'io.opencaesar.owl:owl-shacl-fuseki-gradle:+'
+        classpath 'io.opencaesar.owl:owl-query-gradle:+'
+        classpath 'io.opencaesar.owl:owl-load-gradle:+'
+        classpath 'io.opencaesar.owl:owl-reason-gradle:+'
+        classpath 'io.opencaesar.oml:oml-bikeshed-gradle:1.+'
+        classpath 'io.opencaesar.oml:oml-merge-gradle:1.+'
+        classpath 'io.opencaesar.adapters:oml2owl-gradle:1.+'
+    }
+}
+
+// Dataset-specific variables
+ext {
+    // Name of dataset (matches one used in .fuseki.ttl file)
+    dataset = 'omlModelica'
+    // Root ontology IRI of the dataset
+    rootIri = 'http://openmodelica.org/omlModelica/description/bundle'
+    // URL for publishing dataset documentation
+    url = 'http://openmodelica.org/omlModelica/'
+    // Bikeshed folder
+    bikeshed = 'build/bikeshed'
+}
+
+/*
+ * The repositories to look up OML dependencies in
+ */
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
+/*
+ * The configuration of OML dependencies
+ */
+configurations {
+    oml
+}
+
+/*
+ * Dependency versions
+ */
+ext { 
+    coreVersion = '3.+'
+}
+
+/*
+ * The OML dependencies
+ */
+dependencies {
+    oml "io.opencaesar.ontologies:core-vocabularies:$coreVersion"
+}
+
+/*
+ * A task to extract and merge the OML dependencies
+ */
+task downloadDependencies(type:io.opencaesar.oml.merge.OmlMergeTask, group:"oml") {
+    inputZipPaths = configurations.oml.files
+    outputCatalogFolder = file('build/oml')
+}
+
+/*
+ * A task to generate Bikeshed specification for the OML catalog
+ */
+task omlToBikeshed(type: io.opencaesar.oml.bikeshed.Oml2BikeshedTask, group:"oml", dependsOn: downloadDependencies) {
+    // OML catalog
+    inputCatalogPath = file('catalog.xml')
+    // OML catalog title
+    inputCatalogTitle = project.title
+    // OML catalog version
+    inputCatalogVersion = project.version
+    // Input Ontology Iri
+    rootOntologyIri = "$rootIri".toString()
+    // OWL folder
+    outputFolderPath = file("$bikeshed")
+    // Publish URL
+    publishUrl = "$url".toString()
+}
+
+/*
+ * A task to generate the model documentation in HTML
+ */
+task generateDocs(type: Exec, dependsOn: omlToBikeshed) {
+	inputs.files(fileTree("$bikeshed").include('**/*.bs'))
+	outputs.files(fileTree("$bikeshed").include('**/*.html'))
+	if (org.gradle.internal.os.OperatingSystem.current().isWindows()) {
+		commandLine "$bikeshed/publish.bat"
+	} else {
+		commandLine "$bikeshed/publish.sh"
+	}
+}
+
+/*
+ * A task to convert the OML catalog to OWL catalog
+ */
+task omlToOwl(type:io.opencaesar.oml2owl.Oml2OwlTask, group:"oml", dependsOn: downloadDependencies) {
+    // OML catalog
+    inputCatalogPath = file('catalog.xml')
+    // OWL catalog
+    outputCatalogPath = file('build/owl/catalog.xml')
+}
+
+/*
+ * A task to run the Openllet reasoner on the OWL catalog
+ */
+task owlReason(type:io.opencaesar.owl.reason.OwlReasonTask, group:"oml", dependsOn: omlToOwl) {
+    // OWL catalog
+    catalogPath = file('build/owl/catalog.xml')
+    // Input ontology IRI to reason on
+    inputOntologyIri = "$rootIri".toString()
+    // Entailment statements to generate and the ontologies to persist them in
+    specs = [
+        "$rootIri/classes = ALL_SUBCLASS".toString(),
+        "$rootIri/properties = INVERSE_PROPERTY | ALL_SUBPROPERTY".toString(),
+        "$rootIri/individuals = ALL_INSTANCE | DATA_PROPERTY_VALUE | OBJECT_PROPERTY_VALUE | SAME_AS".toString()
+    ]
+    // Junit error report
+    reportPath = file('build/reports/reasoning.xml')
+}
+
+/*
+ * Start the headless Fuseki server
+ */
+task startFuseki(type: io.opencaesar.owl.fuseki.StartFusekiTask, group:"oml") {
+    configurationPath = file('.fuseki.ttl')
+    outputFolderPath = file('.fuseki')
+}
+
+/*
+ * Stop the headless Fuseki server
+ */
+task stopFuseki(type: io.opencaesar.owl.fuseki.StopFusekiTask, group:"oml") {
+    outputFolderPath = file('.fuseki')
+}
+
+/*
+ * A task to load an OWL catalog to a Fuseki dataset endpoint
+ */
+task owlLoad(type:io.opencaesar.owl.load.OwlLoadTask, group:"oml", dependsOn: owlReason) {
+    catalogPath = file('build/owl/catalog.xml')
+    endpointURL = "http://localhost:3030/$dataset".toString()
+    fileExtensions = ['owl', 'ttl']
+    iris = [
+        "$rootIri/classes".toString(),
+        "$rootIri/properties".toString(),
+        "$rootIri/individuals".toString()
+    ]
+}
+
+/*
+ * A task to run a set of SPARQL queries on a Fuseki dataset endpoint
+ */
+task owlQuery(type:io.opencaesar.owl.query.OwlQueryTask, group:"oml", dependsOn: owlLoad) {
+	inputs.files(owlLoad.inputs.files) // rerun when the dataset changes
+    endpointURL = "http://localhost:3030/$dataset".toString()
+    queryPath = file('src/sparql')
+    resultPath = file('build/frames')
+}
+
+/*
+ * A task to run a set of SHACL validation rules on a Fuseki dataset endpoint
+ */
+task owlShacl(type:io.opencaesar.owl.shacl.fuseki.OwlShaclFusekiTask, group:"oml", dependsOn: owlLoad) {
+    endpointURL = "http://localhost:3030/$dataset".toString()
+    queryPath = file('src/shacl')
+    resultPath = file('build/reports')
+}
+
+/*
+ * A task to build the project, which executes several tasks together
+ */
+tasks.named('build') {
+    group "oml"
+    dependsOn owlReason
+}
+
+/*
+ * A task to delete the build artifacts
+ */
+tasks.named('clean') {
+    group "oml"
+}
+
+/*
+ * Publish artifact to maven
+ */
+task omlZip(type: Zip, group:"oml") {
+    from file('src/oml')
+    include "**/*.oml"
+    destinationDirectory = file('build/libs')
+    archiveBaseName = project.name
+    archiveVersion = project.version
+}
+
+publishing.publications.maven.artifact omlZip
+
+/*
+ * Integration with the Eclipse IDE
+ */ 
+apply plugin: 'eclipse'
+
+eclipse {
+    synchronizationTasks downloadDependencies
+}

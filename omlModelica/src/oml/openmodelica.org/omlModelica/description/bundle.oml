@@ -1,0 +1,18 @@
+@dc:title "Example Description Bundle"
+@dc:creator "Example Company"
+@dc:rights "Copyright 2019, by Example Company"
+description bundle <http://openmodelica.org/omlModelica/description/bundle#> as description-bundle {
+	
+	// The vocabularies used by this description bundle
+
+	uses <http://purl.org/dc/elements/1.1/> as dc
+	
+	uses <http://openmodelica.org/omlModelica/vocabulary/bundle#>
+	
+	// All the descriptions included in this description bundle
+
+	includes <http://openmodelica.org/omlModelica/description/description1#>
+	
+	includes <http://openmodelica.org/omlModelica/description/instances#>
+
+}

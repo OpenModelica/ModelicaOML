@@ -1,0 +1,59 @@
+vocabulary <http://openmodelica.org/omlModelica/vocabulary/classes#> as classes {
+  
+  extends <http://www.w3.org/2001/XMLSchema#> as xsd
+  
+  aspect Name
+  
+  scalar property id [
+    domain Name
+    range xsd:string
+    functional
+  ]
+  
+  // Modelica restricted classes
+  concept Type :> Class
+  concept Class :> Name
+  concept Model :> Class
+  concept Block :> Class
+  concept Record :> Class
+  concept Connector :> Class
+  concept Function :> Class
+  concept Package :> Class
+  
+  concept Real :> Type
+  concept Integer :> Type
+  concept Boolean :> Type
+  concept Enumeration :> Type
+  
+  concept Component :> Name
+  
+  relation entity Contains [
+    from Class
+    to Component
+    forward contains
+    reverse isContainedBy
+  ]
+
+  relation entity hasType [
+    from Component
+    to Class
+  ]
+
+  // Component or Class attributes
+  concept Attribute
+  concept Input :> Attribute
+  concept Output :> Attribute
+  concept Parameter :> Attribute
+  concept Constant :> Attribute
+  concept Replaceable :> Attribute
+  concept Flow :> Attribute
+  concept Stream :> Attribute
+  concept Inner :> Attribute
+  concept Outer :> Attribute
+
+  relation entity hasAttribute [
+    from Component
+    to Attribute
+  ]
+  
+}
