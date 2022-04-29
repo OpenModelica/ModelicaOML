@@ -1,0 +1,8 @@
+description <http://openmodelica.org/omlModelica/description/typeInstances#> as typeInstances {
+  uses <http://openmodelica.org/omlModelica/vocabulary/classes#> as m	
+  
+  ci Real : m:Type
+  ci Integer : m:Type
+  ci Boolean : m:Type
+  
+}

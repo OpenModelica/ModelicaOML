@@ -1,0 +1,7 @@
+description <http://openmodelica.org/omlModelica/description/attributeInstances#> as attributeInstances {
+  uses <http://openmodelica.org/omlModelica/vocabulary/classes#> as m
+    
+  ci Parameter : m:Parameter
+  ci Input : m:Input
+  ci Output : m:Output
+}

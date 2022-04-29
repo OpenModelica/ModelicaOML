@@ -1,6 +1,8 @@
 vocabulary <http://openmodelica.org/omlModelica/vocabulary/classes#> as classes {
   
   extends <http://www.w3.org/2001/XMLSchema#> as xsd
+
+	extends <http://www.w3.org/2000/01/rdf-schema#> as rdfs
   
   aspect Name
   
@@ -19,12 +21,7 @@ vocabulary <http://openmodelica.org/omlModelica/vocabulary/classes#> as classes 
   concept Connector :> Class
   concept Function :> Class
   concept Package :> Class
-  
-  concept Real :> Type
-  concept Integer :> Type
-  concept Boolean :> Type
-  concept Enumeration :> Type
-  
+   
   concept Component :> Name
   
   relation entity Contains [
@@ -34,26 +31,24 @@ vocabulary <http://openmodelica.org/omlModelica/vocabulary/classes#> as classes 
     reverse isContainedBy
   ]
 
-  relation entity hasType [
+  relation entity HasType [
     from Component
     to Class
+    forward hasType
   ]
-
-  // Component or Class attributes
-  concept Attribute
-  concept Input :> Attribute
-  concept Output :> Attribute
-  concept Parameter :> Attribute
-  concept Constant :> Attribute
-  concept Replaceable :> Attribute
-  concept Flow :> Attribute
-  concept Stream :> Attribute
-  concept Inner :> Attribute
-  concept Outer :> Attribute
-
-  relation entity hasAttribute [
-    from Component
-    to Attribute
+  
+  enumerated scalar Prefix [
+  	"input", "output", "parameter", "constant", "replaceable", "flow", "stream", "inner", "outer", "innerouter"
+  ]
+  
+  scalar property prefix [
+  	domain Component
+  	range Prefix
+  ]
+  
+  scalar property defaultValue [
+  	domain Component
+  	range rdfs:Literal
   ]
   
 }

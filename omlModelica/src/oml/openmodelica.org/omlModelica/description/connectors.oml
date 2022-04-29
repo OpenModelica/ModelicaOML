@@ -1,0 +1,43 @@
+description <http://openmodelica.org/omlModelica/description/connectors#> as connectors {
+
+  uses <http://openmodelica.org/omlModelica/vocabulary/classes#> as m
+  extends <http://openmodelica.org/omlModelica/description/typeInstances#> as t
+	
+  //block BlockTest
+  //  input Real x;
+  //  output Real x;
+  //end BlockTest;
+
+  ci BlockTest : m:Block [ 
+  	m:contains BlockTest.x
+  	m:contains BlockTest.y
+  ]
+  ci BlockTest.x : m:Component [
+  	m:prefix "input"
+  	m:defaultValue "someStartValue"
+  	m:hasType t:Real
+  ]
+  ci BlockTest.y : m:Component [
+  	m:prefix "output"
+  	m:defaultValue "someStartValue"
+  	m:hasType t:Real
+  ]
+  
+  //connector C
+  // flow Current c;
+  // Voltage v;
+  //end C;
+  //
+  // model M
+  //   C c1;
+  //   C c2;
+  // equation
+  //   connect(c1, c2);
+  // end M;
+  
+  // M
+  //  c1.c; 
+  //  c1.v;
+        
+}  
+

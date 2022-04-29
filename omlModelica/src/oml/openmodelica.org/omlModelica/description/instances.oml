@@ -1,43 +1,23 @@
 description <http://openmodelica.org/omlModelica/description/instances#> as instances {
   uses <http://openmodelica.org/omlModelica/vocabulary/classes#> as m
+  extends <http://openmodelica.org/omlModelica/description/typeInstances#> as t
   
   //model HelloWorld
   //  parameter Real a;
   //  Real x;
   //end HelloWorld;
   
-  ci Real : m:Real
-  ci Parameter : m:Parameter
+  ci HelloWorld : m:Model [
+  	m:contains HelloWorld.x
+  	m:contains HelloWorld.a
+  ]
+  ci HelloWorld.x : m:Component [
+  	m:hasType t:Real
+  ]
+  ci HelloWorld.a : m:Component [
+  	m:prefix "parameter"
+  	m:prefix "input"
+  	m:hasType t:Real
+  ]
   
-  ci HelloWorld : m:Model
-  ci HelloWorld.x : m:Component
-  ci HelloWorld.a : m:Component
-  
-  ri _contains1 : m:Contains [
-     from HelloWorld 
-     to HelloWorld.x
-  ]
-
-  ri _contains2 : m:Contains [
-     from HelloWorld
-     to HelloWorld.a
-  ]
-
-
-  ri _hasAttribute1 : m:hasAttribute [
-     from HelloWorld.a
-     to Parameter
-  ]
-
-  ri _hasType1 : m:hasType [
-     from HelloWorld.x
-     to Real 
-  ]
-
-  ri _hasType2 : m:hasType [
-     from HelloWorld.a
-     to Real
-  ]
-
-
 }
