@@ -6,7 +6,7 @@ vocabulary <http://openmodelica.org/omlModelica/vocabulary/classes#> as classes 
   
   aspect Name
   
-  scalar property id [
+  scalar property simpleName [
     domain Name
     range xsd:string
     functional

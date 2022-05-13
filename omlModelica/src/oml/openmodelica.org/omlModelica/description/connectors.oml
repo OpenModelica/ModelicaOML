@@ -51,9 +51,31 @@ description <http://openmodelica.org/omlModelica/description/connectors#> as con
   	m:contains RLC.sineVoltage.p.i
   ]
 
+  ci RLC.sineVoltage.p.v : m:Component [
+    m:simpleName "v"
+  	m:hasType t:Real
+  ]
+
+  ci RLC.sineVoltage.p.i : m:Component [
+    m:simpleName "i"
+  	m:prefix "flow"
+  	m:hasType t:Real
+  ]
+
   ci RLC.sineVoltage.n : m:Connector [
   	m:contains RLC.sineVoltage.n.v
   	m:contains RLC.sineVoltage.n.i
+  ]
+
+  ci RLC.sineVoltage.n.v : m:Component [
+  	m:simpleName "v"
+  	m:hasType t:Real
+  ]
+  
+  ci RLC.sineVoltage.n.i : m:Component [
+  	m:simpleName "i"
+  	m:prefix "flow"
+  	m:hasType t:Real
   ]
   
   ci RLC.sineVoltage.signalSource : m:Model [
@@ -66,7 +88,7 @@ description <http://openmodelica.org/omlModelica/description/connectors#> as con
   ]
 
   ci RLC.sineVoltage.V : m:Component [
-  	m:hasType t:Real
+  	m:hasType t:Real 
   ] 
   
   ci RLC.sineVoltage.phase : m:Component [
@@ -90,24 +112,6 @@ description <http://openmodelica.org/omlModelica/description/connectors#> as con
   ]
   
   ci RLC.sineVoltage.startTime : m:Component [
-  	m:hasType t:Real
-  ]
-
-  ci RLC.sineVoltage.p.v : m:Component [
-  	m:hasType t:Real
-  ]
-
-  ci RLC.sineVoltage.p.i : m:Component [
-  	m:prefix "flow"
-  	m:hasType t:Real
-  ]
-
-  ci RLC.sineVoltage.n.v : m:Component [
-  	m:hasType t:Real
-  ]
-  
-  ci RLC.sineVoltage.n.i : m:Component [
-  	m:prefix "flow"
   	m:hasType t:Real
   ]
 
