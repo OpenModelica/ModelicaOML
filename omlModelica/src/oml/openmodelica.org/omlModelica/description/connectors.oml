@@ -8,36 +8,136 @@ description <http://openmodelica.org/omlModelica/description/connectors#> as con
   //  output Real x;
   //end BlockTest;
 
-  ci BlockTest : m:Block [ 
-  	m:contains BlockTest.x
-  	m:contains BlockTest.y
+  // http://openmodelica.org/omlModelica/description/Modelica_3.2.3#BlockTest
+  // http://openmodelica.org/omlModelica/description/Modelica_4.0.0#BlockTest
+  
+  // ci BlockTest : m:Block [ 
+  // 	m:contains BlockTest.x
+  // 	m:contains BlockTest.y
+  // ]
+  // ci BlockTest.x : m:Component [
+  // 	m:prefix "input"
+  // 	m:defaultValue "someStartValue"
+  // 	m:hasType t:Real
+  // ]
+  // ci BlockTest.y : m:Component [
+  // 	m:prefix "output"
+  // 	m:defaultValue "someStartValue"
+  // 	m:hasType t:Real
+  // ]
+  
+  // tests/RLC.mo
+  // tests/RLCTotal.mo
+  // tests/RLCFlat.mo
+  ci RLC : m:Model [
+  	m:contains RLC.sineVoltage
   ]
-  ci BlockTest.x : m:Component [
-  	m:prefix "input"
-  	m:defaultValue "someStartValue"
+  
+  ci RLC.sineVoltage : m:Model [
+  	m:contains RLC.sineVoltage.V
+  	m:contains RLC.sineVoltage.phase
+  	m:contains RLC.sineVoltage.freqHz
+  	m:contains RLC.sineVoltage.v
+  	m:contains RLC.sineVoltage.i
+  	m:contains RLC.sineVoltage.p
+  	m:contains RLC.sineVoltage.n
+  	m:contains RLC.sineVoltage.offset
+    m:contains RLC.sineVoltage.startTime
+    m:contains RLC.sineVoltage.signalSource
+  ]
+  
+  ci RLC.sineVoltage.p : m:Connector [
+  	m:contains RLC.sineVoltage.p.v
+  	m:contains RLC.sineVoltage.p.i
+  ]
+
+  ci RLC.sineVoltage.n : m:Connector [
+  	m:contains RLC.sineVoltage.n.v
+  	m:contains RLC.sineVoltage.n.i
+  ]
+  
+  ci RLC.sineVoltage.signalSource : m:Model [
+    m:contains RLC.sineVoltage.signalSource.amplitude
+    m:contains RLC.sineVoltage.signalSource.freqHz
+    m:contains RLC.sineVoltage.signalSource.phase
+    m:contains RLC.sineVoltage.signalSource.y
+    m:contains RLC.sineVoltage.signalSource.offset
+    m:contains RLC.sineVoltage.signalSource.startTime  	
+  ]
+
+  ci RLC.sineVoltage.V : m:Component [
+  	m:hasType t:Real
+  ] 
+  
+  ci RLC.sineVoltage.phase : m:Component [
   	m:hasType t:Real
   ]
-  ci BlockTest.y : m:Component [
-  	m:prefix "output"
-  	m:defaultValue "someStartValue"
+
+  ci RLC.sineVoltage.freqHz : m:Component [
   	m:hasType t:Real
   ]
   
-  //connector C
-  // flow Current c;
-  // Voltage v;
-  //end C;
-  //
-  // model M
-  //   C c1;
-  //   C c2;
-  // equation
-  //   connect(c1, c2);
-  // end M;
+  ci RLC.sineVoltage.v : m:Component [
+  	m:hasType t:Real
+  ]
+
+  ci RLC.sineVoltage.i : m:Component [
+  	m:hasType t:Real
+  ]
+
+  ci RLC.sineVoltage.offset : m:Component [
+  	m:hasType t:Real
+  ]
   
-  // M
-  //  c1.c; 
-  //  c1.v;
-        
+  ci RLC.sineVoltage.startTime : m:Component [
+  	m:hasType t:Real
+  ]
+
+  ci RLC.sineVoltage.p.v : m:Component [
+  	m:hasType t:Real
+  ]
+
+  ci RLC.sineVoltage.p.i : m:Component [
+  	m:prefix "flow"
+  	m:hasType t:Real
+  ]
+
+  ci RLC.sineVoltage.n.v : m:Component [
+  	m:hasType t:Real
+  ]
+  
+  ci RLC.sineVoltage.n.i : m:Component [
+  	m:prefix "flow"
+  	m:hasType t:Real
+  ]
+
+  ci RLC.sineVoltage.signalSource.amplitude : m:Component [
+  	m:hasType t:Real
+  ]
+
+  ci RLC.sineVoltage.signalSource.freqHz : m:Component [
+  	m:hasType t:Real
+  ]
+
+  ci LC.sineVoltage.signalSource.phase : m:Component [
+  	m:hasType t:Real
+  ]
+
+  ci RLC.sineVoltage.signalSource.phase : m:Component [
+  	m:hasType t:Real
+  ]
+
+  ci RLC.sineVoltage.signalSource.y : m:Component [
+  	m:hasType t:Real
+  ]
+
+  ci RLC.sineVoltage.signalSource.offset : m:Component [
+  	m:hasType t:Real
+  ]
+
+  ci RLC.sineVoltage.signalSource.startTime : m:Component [
+  	m:hasType t:Real
+  ]
+    
 }  
 

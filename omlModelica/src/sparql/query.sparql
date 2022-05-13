@@ -1,7 +1,9 @@
-PREFIX vocabulary1:   <http://openmodelica.org/omlModelica/vocabulary/vocabulary1#>
+PREFIX m:   <http://openmodelica.org/omlModelica/vocabulary/classes#>
 
-SELECT ?x ?y
+SELECT ?m ?y
 
 WHERE {
-	?x vocabulary1:r ?y
+	?m a m:Model ;
+	   m:contains ?c1
+	   
 }
