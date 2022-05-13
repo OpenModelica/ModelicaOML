@@ -4,6 +4,5 @@ SELECT ?m ?y
 
 WHERE {
 	?m a m:Model ;
-	   m:contains ?c1
-	   
+	m:contains ?c1
 }
