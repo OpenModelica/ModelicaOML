@@ -1,0 +1,6 @@
+<?xml version='1.0'?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="public">
+	<rewriteURI uriStartString="http://openmodelica.org/" rewritePrefix="src/main/oml/openmodelica.org/"/>
+	<rewriteURI uriStartString="http://examples/" rewritePrefix="src/test/oml/examples/"/>
+	<rewriteURI uriStartString="http://" rewritePrefix="build/oml/" />
+</catalog>

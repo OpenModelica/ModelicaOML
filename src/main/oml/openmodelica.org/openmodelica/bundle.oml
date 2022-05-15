@@ -1,0 +1,8 @@
+@dc:title "OpenModelica Bundle"
+vocabulary bundle <http://openmodelica.org/openmodelica/bundle#> as om-bundle {
+
+	includes <http://purl.org/dc/elements/1.1/> as dc
+
+	includes <http://openmodelica.org/openmodelica/classes#>
+
+}

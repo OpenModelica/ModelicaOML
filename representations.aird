@@ -1,21 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:oml="http://opencaesar.io/oml" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style">
   <viewpoint:DAnalysis uid="_Fn4fEMM1Eeyv9vNLgk8h4Q" selectedViews="_Qng4kMM5Eey5iKANiW4k_w _VgYsAMM5Eey5iKANiW4k_w" version="15.0.0.202201261500">
-    <semanticResources>src/oml/openmodelica.org/omlModelica/vocabulary/bundle.oml</semanticResources>
-    <semanticResources>src/oml/openmodelica.org/omlModelica/vocabulary/vocabulary1.oml</semanticResources>
-    <semanticResources>src/oml/openmodelica.org/omlModelica/description/bundle.oml</semanticResources>
-    <semanticResources>src/oml/openmodelica.org/omlModelica/description/description1.oml</semanticResources>
-    <semanticResources>src/oml/openmodelica.org/omlModelica/vocabulary/classes.oml</semanticResources>
-    <semanticResources>src/oml/openmodelica.org/omlModelica/description/instances.oml</semanticResources>
-    <semanticResources>build/oml/purl.org/dc/elements/1.1.oml</semanticResources>
     <semanticResources>build/oml/www.w3.org/2002/07/owl.oml</semanticResources>
     <semanticResources>build/oml/www.w3.org/2000/01/rdf-schema.oml</semanticResources>
     <semanticResources>build/oml/www.w3.org/2001/XMLSchema.oml</semanticResources>
     <semanticResources>build/oml/opencaesar.io/viewpoint.oml</semanticResources>
     <semanticResources>build/oml/www.w3.org/1999/02/22-rdf-syntax-ns.oml</semanticResources>
-    <semanticResources>src/oml/openmodelica.org/omlModelica/description/connectors.oml</semanticResources>
-    <semanticResources>src/oml/openmodelica.org/omlModelica/description/typeInstances.oml</semanticResources>
     <semanticResources>src/oml/openmodelica.org/omlModelica/description/attributeInstances.oml</semanticResources>
+    <semanticResources>src/test/oml/examples/rlc/instances.oml</semanticResources>
+    <semanticResources>src/main/oml/openmodelica.org/openmodelica/bundle.oml</semanticResources>
+    <semanticResources>src/main/oml/openmodelica.org/openmodelica/types.oml</semanticResources>
+    <semanticResources>src/main/oml/openmodelica.org/openmodelica/classes.oml</semanticResources>
+    <semanticResources>src/test/oml/examples/helloworld.oml</semanticResources>
+    <semanticResources>src/test/oml/examples/rlc.oml</semanticResources>
+    <semanticResources>src/test/oml/examples/bundle.oml</semanticResources>
+    <semanticResources>build/oml/purl.org/dc/elements/1.1.oml</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" uid="_Qng4kMM5Eey5iKANiW4k_w">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']"/>
       <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_RIF2EMM5Eey5iKANiW4k_w" name="Description Diagram" repPath="#_RHNsUMM5Eey5iKANiW4k_w" changeId="f782fc3f-9d50-4bcd-8cf9-3b0dfd0c3f23">

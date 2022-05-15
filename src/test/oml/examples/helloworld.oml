@@ -1,0 +1,26 @@
+@dc:title "Hello World Bundle"
+description <http://examples/helloworld#> as helloworld {
+
+	uses <http://purl.org/dc/elements/1.1/> as dc
+
+	uses <http://openmodelica.org/openmodelica/classes#> as m
+
+	// model HelloWorld
+	// parameter Real a;
+	// Real x;
+	// end HelloWorld;
+	ci HelloWorld : m:Model [
+		m:contains HelloWorld.x
+		m:contains HelloWorld.a
+	]
+
+	ci HelloWorld.x : m:Component [
+		m:hasType m:Real []
+	]
+
+	ci HelloWorld.a : m:Component [
+		m:hasPrefix "parameter"
+		m:hasPrefix "input"
+		m:hasType m:Real []
+	]
+}

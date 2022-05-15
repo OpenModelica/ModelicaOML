@@ -1,9 +1,9 @@
 /* 
  * Dataset maven coordinates
  */
-ext.title = "omlModelica"
-description='The OML Modelica ontology'
-group = 'io.opencaesar.ontologies'
+ext.title = "Open Modelica Vocabularies"
+description='The Open Modelica Vocabulary'
+group = 'org.openmodelica.ontologies'
 version = '0.1.0'
 
 apply from: "${rootDir}/gradle/maven-deployment.gradle"
@@ -31,11 +31,11 @@ buildscript {
 // Dataset-specific variables
 ext {
     // Name of dataset (matches one used in .fuseki.ttl file)
-    dataset = 'omlModelica'
+    dataset = 'examples'
     // Root ontology IRI of the dataset
-    rootIri = 'http://openmodelica.org/omlModelica/description/bundle'
+    rootIri = 'http://examples/bundle'
     // URL for publishing dataset documentation
-    url = 'http://openmodelica.org/omlModelica/'
+    url = 'http://openmodelica.org/openmodelica/'
     // Bikeshed folder
     bikeshed = 'build/bikeshed'
 }
@@ -171,17 +171,9 @@ task owlLoad(type:io.opencaesar.owl.load.OwlLoadTask, group:"oml", dependsOn: ow
 task owlQuery(type:io.opencaesar.owl.query.OwlQueryTask, group:"oml", dependsOn: owlLoad) {
 	inputs.files(owlLoad.inputs.files) // rerun when the dataset changes
     endpointURL = "http://localhost:3030/$dataset".toString()
-    queryPath = file('src/sparql')
-    resultPath = file('build/frames')
-}
-
-/*
- * A task to run a set of SHACL validation rules on a Fuseki dataset endpoint
- */
-task owlShacl(type:io.opencaesar.owl.shacl.fuseki.OwlShaclFusekiTask, group:"oml", dependsOn: owlLoad) {
-    endpointURL = "http://localhost:3030/$dataset".toString()
-    queryPath = file('src/shacl')
-    resultPath = file('build/reports')
+    queryPath = file('src/test/sparql')
+    resultPath = file('build/results')
+    format = 'json'
 }
 
 /*
@@ -203,7 +195,7 @@ tasks.named('clean') {
  * Publish artifact to maven
  */
 task omlZip(type: Zip, group:"oml") {
-    from file('src/oml')
+    from file('src/main/oml')
     include "**/*.oml"
     destinationDirectory = file('build/libs')
     archiveBaseName = project.name

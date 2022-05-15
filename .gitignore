@@ -1,1 +1,10 @@
-/.metadata/
+# Gradle files
+.gradle
+build
+gradle/wrapper/gradle-wrapper.jar
+
+# MacOS files
+.DS_Store
+
+# Fuseki output directory
+.fuseki

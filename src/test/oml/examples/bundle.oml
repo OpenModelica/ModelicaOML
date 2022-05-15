@@ -1,0 +1,12 @@
+@dc:title "Hello World Bundle"
+description bundle <http://examples/bundle#> as examples-bundle {
+	
+	uses <http://purl.org/dc/elements/1.1/> as dc
+	
+	uses <http://openmodelica.org/openmodelica/bundle#>
+	
+	includes <http://examples/helloworld#>
+	
+	includes <http://examples/rlc#>
+	
+}

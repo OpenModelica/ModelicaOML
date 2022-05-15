@@ -1,8 +1,0 @@
-PREFIX m:   <http://openmodelica.org/omlModelica/vocabulary/classes#>
-
-SELECT ?m ?y
-
-WHERE {
-	?m a m:Model ;
-	m:contains ?c1
-}
