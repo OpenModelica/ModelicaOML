@@ -43,6 +43,8 @@ vocabulary <http://openmodelica.org/openmodelica/classes#> as m {
 
 	concept Package :> Class
 
+	concept Component :> Named
+
 	structure Type
 	
 	structured property hasType [
@@ -79,8 +81,6 @@ vocabulary <http://openmodelica.org/openmodelica/classes#> as m {
 	structure Boolean :> PrimitiveType
 
 	structure String :> PrimitiveType
-
-	concept Component :> Named
 
 	enumerated scalar Prefix [
 		"input",

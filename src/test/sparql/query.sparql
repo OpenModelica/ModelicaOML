@@ -8,7 +8,7 @@ WHERE {
 	?m m:contains ?con2 .
 	
 	?con1 a m:Connector .
-	?con1 m:hasName "p" .
+	#?con1 m:hasName "p" .
 	?con1 m:contains [
 		a m:Component ;
 		m:hasName "v" ;
@@ -30,7 +30,7 @@ WHERE {
 	] .
 	
 	?con2 a m:Connector .
-	?con2 m:hasName "n" .
+	#?con2 m:hasName "n" .
 	?con2 m:contains [
 		a m:Component ;
 		m:hasName "v" ;
@@ -52,5 +52,5 @@ WHERE {
 	] .
 	
 	# If we do not look for specific names for con1 / con2, uncomment the following statement
-	#FILTER (?con1 != ?con2)
+	FILTER (?con1 != ?con2)
 }
