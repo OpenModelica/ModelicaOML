@@ -1,0 +1,239 @@
+@dc:title "RLC"
+description <http://examples/rlc#> as rlc {
+
+	uses <http://purl.org/dc/elements/1.1/> as dc
+
+	uses <http://openmodelica.org/openmodelica/classes#> as m
+
+	ci RLC : m:Model [
+		m:hasName "RLC"
+		m:contains RLC.sineVoltage
+	]
+
+
+    ci Modelica.Electrical.Analog.Sources.SineVoltage : m:Model [
+		m:contains Modelica.Electrical.Analog.Sources.SineVoltage.V
+		m:contains Modelica.Electrical.Analog.Sources.SineVoltage.phase
+		m:contains Modelica.Electrical.Analog.Sources.SineVoltage.freqHz
+		// from extends Interfaces.VoltageSource(redeclare Modelica.Blocks.Sources.Sine signalSource(final amplitude = V, final freqHz = freqHz, final phase = phase));
+		//   from extends OnePort
+		m:contains Modelica.Electrical.Analog.Sources.SineVoltage.v
+		m:contains Modelica.Electrical.Analog.Sources.SineVoltage.i
+		m:contains Modelica.Electrical.Analog.Sources.SineVoltage.p
+		m:contains Modelica.Electrical.Analog.Sources.SineVoltage.n
+		//  from Interfaces.VoltageSource
+		m:contains Modelica.Electrical.Analog.Sources.SineVoltage.offset
+		m:contains Modelica.Electrical.Analog.Sources.SineVoltage.startTime
+		m:contains Modelica.Electrical.Analog.Sources.SineVoltage.signalSource
+    ]
+    
+	ci RLC.sineVoltage : m:Component [
+		m:hasName "sineVoltage"
+        m:hasType Modelica.Electrical.Analog.Sources.SineVoltage
+	]
+
+	ci RLC.sineVoltage.V : m:Component [
+		m:hasName "V"
+		m:hasPrefix "parameter"
+		m:hasType m:Real [
+			m:hasQuantity "ElectricPotential"
+			m:hasUnit "V"
+			m:hasStartDecimal 1.0
+		]
+		m:hasInitialValue 1.0
+		m:hasComment "Amplitude of sine wave"
+	]
+
+	ci RLC.sineVoltage.phase : m:Component [
+		m:hasName "phase"
+		m:hasPrefix "parameter"
+		m:hasType m:Real [
+			m:hasQuantity "Angle"
+			m:hasUnit "rad"
+			m:hasDisplayUnit "deg"
+		]
+		m:hasInitialValue 0.0
+		m:hasComment "Phase of sine wave"
+	]
+
+	ci RLC.sineVoltage.freqHz : m:Component [
+		m:hasName "freqHz"
+		m:hasPrefix "parameter"
+		m:hasType m:Real [
+			m:hasQuantity "Frequency"
+			m:hasUnit "Hz"
+			m:hasStartDecimal 1.0
+		]
+		m:hasInitialValue 50.0
+		m:hasComment "Frequency of sine wave"
+	]
+
+	ci RLC.sineVoltage.v : m:Component [
+		m:hasName "v"
+		m:hasType m:Real [
+			m:hasQuantity "ElectricPotential"
+			m:hasUnit "V"
+		]
+		m:hasComment "Voltage drop of the two pins (= p.v - n.v)"
+	]
+
+	ci RLC.sineVoltage.i : m:Component [
+		m:hasName "i"
+		m:hasType m:Real [
+			m:hasQuantity "ElectricCurrent"
+			m:hasUnit "A"
+		]
+		m:hasComment "Current flowing from pin p to pin n"
+	]
+
+	ci RLC.sineVoltage.p : m:Connector [
+		m:hasName "p"
+		m:contains RLC.sineVoltage.p.v
+		m:contains RLC.sineVoltage.p.i
+	]
+
+	ci RLC.sineVoltage.p.v : m:Component [
+		m:hasName "v"
+		m:hasType m:Real [
+			m:hasQuantity "ElectricPotential"
+			m:hasUnit "V"
+		]
+		m:hasComment "Potential at the pin"
+	]
+
+	ci RLC.sineVoltage.p.i : m:Component [
+		m:hasName "i"
+		m:hasPrefix "flow"
+		m:hasType m:Real [
+			m:hasQuantity "ElectricCurrent"
+			m:hasUnit "A"
+		]
+		m:hasComment "Current flowing into the pin"
+	]
+
+	ci RLC.sineVoltage.n : m:Connector [
+		m:hasName "n"
+		m:contains RLC.sineVoltage.n.v
+		m:contains RLC.sineVoltage.n.i
+	]
+
+	ci RLC.sineVoltage.n.v : m:Component [
+		m:hasName "v"
+		m:hasType m:Real [
+			m:hasQuantity "ElectricPotential"
+			m:hasUnit "V"
+		]
+		m:hasComment "Potential at the pin"
+	]
+
+	ci RLC.sineVoltage.n.i : m:Component [
+		m:hasName "i"
+		m:hasPrefix "flow"
+		m:hasType m:Real [
+			m:hasQuantity "ElectricCurrent"
+			m:hasUnit "A"
+		]
+		m:hasComment "Current flowing into the pin"
+	]
+
+	ci RLC.sineVoltage.offset : m:Component [
+		m:hasName "offset"
+		m:hasPrefix "parameter"
+		m:hasType m:Real [
+			m:hasQuantity "ElectricPotential"
+			m:hasUnit "V"
+		]
+		m:hasComment "Voltage offset"
+	]
+
+	ci RLC.sineVoltage.startTime : m:Component [
+		m:hasName "startTime"
+		m:hasPrefix "parameter"
+		m:hasInitialValue 0.0
+		m:hasType m:Real [
+			m:hasQuantity "Time"
+			m:hasUnit "s"
+		]
+		m:hasComment "Time offset"
+	]
+
+	ci RLC.sineVoltage.signalSource : m:Model [
+		m:hasName "signalSource"
+		m:contains RLC.sineVoltage.signalSource.amplitude
+		m:contains RLC.sineVoltage.signalSource.freqHz
+		m:contains RLC.sineVoltage.signalSource.phase
+		m:contains RLC.sineVoltage.signalSource.y
+		m:contains RLC.sineVoltage.signalSource.offset
+		m:contains RLC.sineVoltage.signalSource.startTime
+	]
+
+	ci RLC.sineVoltage.signalSource.amplitude : m:Component [
+		m:hasName "amplitude"
+		m:hasPrefix "final"
+		m:hasPrefix "parameter"
+		m:hasType m:Real [
+			m:hasQuantity "ElectricPotential"
+			m:hasUnit "V"
+			m:hasStartDecimal 1.0
+		]
+		m:hasInitialValue 1.0 // = sineVoltage.V
+		m:hasComment "Amplitude of sine wave"
+	]
+
+	ci RLC.sineVoltage.signalSource.freqHz : m:Component [
+		m:hasName "freqHz"
+		m:hasPrefix "final"
+		m:hasPrefix "parameter"
+		m:hasType m:Real [
+			m:hasQuantity "Frequency"
+			m:hasUnit "Hz"
+			m:hasStartDecimal 1.0
+		]
+		m:hasInitialValue 50.0 // = sineVoltage.freqHz
+		m:hasComment "Frequency of sine wave"
+	]
+
+	ci RLC.sineVoltage.signalSource.phase : m:Component [
+		m:hasName "phase"
+		m:hasPrefix "final"
+		m:hasPrefix "parameter"
+		m:hasType m:Real [
+			m:hasQuantity "Angle"
+			m:hasUnit "rad"
+			m:hasDisplayUnit "deg"
+		]
+		m:hasInitialValue 0.0 // = sineVoltage.phase
+		m:hasComment "Phase of sine wave"
+	]
+
+	ci RLC.sineVoltage.signalSource.y : m:Component [
+		m:hasName "y"
+		m:hasType m:Real []
+		m:hasComment "Connector of Real output signal"
+	]
+
+	ci RLC.sineVoltage.signalSource.offset : m:Component [
+		m:hasName "offset"
+		m:hasPrefix "final"
+		m:hasPrefix "parameter"
+		m:hasType m:Real [
+			m:hasQuantity "ElectricPotential"
+			m:hasUnit "V"
+		]
+		m:hasInitialValue 0.0 // = sineVoltage.offset
+		m:hasComment "Offset of output signal y"
+	]
+
+	ci RLC.sineVoltage.signalSource.startTime : m:Component [
+		m:hasName "startTime"
+		m:hasPrefix "final"
+		m:hasPrefix "parameter"
+		m:hasType m:Real [
+			m:hasQuantity "Time"
+			m:hasUnit "s"
+		]
+		m:hasInitialValue 0.0 // = sineVoltage.startTime
+		m:hasComment "Output y = offset for time < startTime"
+	]
+}  
+

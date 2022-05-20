@@ -8,5 +8,6 @@ description bundle <http://examples/bundle#> as examples-bundle {
 	includes <http://examples/helloworld#>
 	
 	includes <http://examples/rlc#>
+	includes <http://examples/rlccombined#>
 	
 }
