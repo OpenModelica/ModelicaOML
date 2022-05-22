@@ -1,0 +1,43 @@
+PREFIX m:   <http://openmodelica.org/openmodelica/modelica#>
+PREFIX msl:   <http://examples/ModelicaStandardLibrary#>
+
+SELECT DISTINCT ?m ?comp1 ?comp2
+
+WHERE {
+	?m a m:Model .
+	?m m:contains ?comp1 .
+	?m m:contains ?comp2 .
+	
+    ?comp1 a m:Component ;
+	       m:hasType ?con1 .
+	?comp2 a m:Component ;
+	       m:hasType ?con2 .
+
+	?con1 a m:Connector .
+	?con1 m:contains [
+		a m:Component ;
+		m:hasName "v" ;
+		m:hasType msl:Modelica.SIunits.ElectricPotential 
+	] .
+	?con1 m:contains [
+		a m:Component ;
+		m:hasName "i" ;
+		m:hasPrefix "flow" ;
+		m:hasType msl:Modelica.SIunits.ElectricCurrent
+	] .
+	
+	?con2 a m:Connector .
+	#?con2 m:hasName "n" .
+	?con2 m:contains [
+		a m:Component ;
+		m:hasName "v" ;
+		m:hasType  msl:Modelica.SIunits.ElectricPotential
+	] .
+	?con2 m:contains [
+		a m:Component ;
+		m:hasName "i" ;
+		m:hasPrefix "flow" ;
+		m:hasType msl:Modelica.SIunits.ElectricCurrent
+	] .
+
+}

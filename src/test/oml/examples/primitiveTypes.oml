@@ -1,0 +1,58 @@
+@dc:title "Primitive Types"
+description <http://examples/primitiveTypes#> as primitiveTypes {
+
+	uses <http://purl.org/dc/elements/1.1/> as dc
+
+	uses <http://openmodelica.org/openmodelica/modelica#> as m
+
+	
+    ci Real : m:Type [
+    	m:hasName "Real"
+    	m:contains Real.quantity
+    	m:contains Real.unit
+    	m:contains Real.displayUnit
+    	m:contains Real.min
+    	m:contains Real.max
+    	m:contains Real.start
+    ]
+    
+    ci Real.quantity : m:Component [
+    	m:hasName "quantity"
+    	m:hasValue ""
+    ]
+    
+    ci Real.unit : m:Component [
+    	m:hasName "unit"
+    	m:hasValue ""
+    ]
+    
+    ci Real.displayUnit : m:Component [
+    	m:hasName "displayUnit"
+    	m:hasValue ""
+    ]
+
+    ci Real.min : m:Component [
+    	m:hasName "min"
+    	m:hasValue "-Inf"
+    ]
+    
+    ci Real.max : m:Component [
+    	m:hasName "max"
+    	m:hasValue "+Inf"
+    ]
+
+
+    ci Real.start : m:Component [
+    	m:hasName "start"
+    	m:hasValue "0.0"
+    ]
+
+    ci Integer : m:Type [
+    	m:hasName "Integer"
+    ]
+    
+    ci Boolean : m:Type [
+    	m:hasName "Boolean"
+    ]
+    
+}

@@ -1,0 +1,131 @@
+@dc:title "OpenModelica Modelica Vocabulary"
+vocabulary <http://openmodelica.org/openmodelica/modelica#> as m {
+
+	extends <http://www.w3.org/2001/XMLSchema#> as xsd
+
+	extends <http://www.w3.org/2000/01/rdf-schema#> as rdfs
+
+	extends <http://purl.org/dc/elements/1.1/> as dc
+
+	aspect Named
+
+	scalar property hasName [
+		domain Named
+		range xsd:string
+		functional
+	]
+
+	scalar property hasComment [
+		domain Named
+		range xsd:string
+	]
+
+	aspect Namespace :> Named
+
+	relation entity Contains [
+		from Namespace
+		to Named
+		forward contains
+		reverse isContainedBy
+	]
+
+	concept Class :> Namespace
+
+	concept Model :> Class
+
+	concept Block :> Class
+
+	concept Record :> Class
+
+	concept Connector :> Class
+
+	concept Function :> Class
+
+	concept Package :> Class
+	
+	concept Type :> Class
+
+	concept Component :> Named
+	
+	relation entity hasTypeRelation [
+		from Component
+		to Class
+		forward hasType
+		reverse instanceOf
+	]
+
+	relation entity extendsClassRelation [
+		from Class
+		to Class
+		forward extendsClass
+		reverse instanceOfClass
+	]
+
+	scalar property hasQuantity [
+		domain Type
+		range xsd:string
+	]
+
+	scalar property hasUnit [
+		domain Type
+		range xsd:string
+	]
+	
+	scalar property hasDisplayUnit [
+		domain Type
+		range xsd:string
+	]
+
+	scalar property hasStartDecimal [
+		domain Type
+		range xsd:decimal
+	]
+
+	scalar property hasFixed [
+		domain Type
+		range xsd:boolean
+	]
+
+	enumerated scalar Prefix [
+		"input",
+		"output",
+		"parameter",
+		"constant",
+		"replaceable",
+		"flow",
+		"stream",
+		"inner",
+		"outer",
+		"innerouter",
+		"final"
+	]
+
+	scalar property hasPrefix [
+		domain Component
+		range Prefix
+	]
+
+	enumerated scalar ClassPrefix [
+		"partial",
+		"input",
+		"output",
+		"encapsulated"
+	]
+
+	scalar property hasClassPrefix [
+		domain Class
+		range ClassPrefix
+	]
+
+
+	scalar property hasInitialValue [
+		domain Component
+		range rdfs:Literal
+	]
+
+	scalar property hasValue [
+		domain Component
+		range rdfs:Literal
+	]
+
+}

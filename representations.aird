@@ -16,6 +16,11 @@
     <semanticResources>src/test/oml/examples/bundle.oml</semanticResources>
     <semanticResources>build/oml/purl.org/dc/elements/1.1.oml</semanticResources>
     <semanticResources>src/test/oml/examples/rlccombined.oml</semanticResources>
+    <semanticResources>src/main/oml/openmodelica.org/openmodelica/modelica.oml</semanticResources>
+    <semanticResources>src/test/oml/examples/primitiveTypes.oml</semanticResources>
+    <semanticResources>src/test/oml/examples/ModelicaStandardLibrary.oml</semanticResources>
+    <semanticResources>src/test/oml/examples/SimplePack.oml</semanticResources>
+    <semanticResources>src/test/oml/examples/ThermoPower.oml</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" uid="_Qng4kMM5Eey5iKANiW4k_w">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']"/>
       <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_RIF2EMM5Eey5iKANiW4k_w" name="Description Diagram" repPath="#_RHNsUMM5Eey5iKANiW4k_w" changeId="f782fc3f-9d50-4bcd-8cf9-3b0dfd0c3f23">
@@ -29,6 +34,10 @@
       <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_ZgnPkMfAEeydBZ-psYpbrw" name="Connectors Diagram" repPath="#_ZgmogMfAEeydBZ-psYpbrw" changeId="f67bda1b-3c1e-4883-9eb0-d374d2d385c8">
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']"/>
         <target xmi:type="oml:Description" href="src/oml/openmodelica.org/omlModelica/description/connectors.oml#/"/>
+      </ownedRepresentationDescriptors>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_xVCfkNg-EeyWRq-3hXYQog" name="Description Diagram" repPath="#_xUjXYNg-EeyWRq-3hXYQog" changeId="4278efa8-fe76-4b5a-979d-353222493fd6">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']"/>
+        <target xmi:type="oml:Description" href="src/test/oml/examples/rlccombined.oml#/"/>
       </ownedRepresentationDescriptors>
     </ownedViews>
     <ownedViews xmi:type="viewpoint:DView" uid="_VgYsAMM5Eey5iKANiW4k_w">
@@ -47,6 +56,10 @@
       <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_RNBrUNa_EeyDqtga5PEKEw" name="Vocabulary Diagram" repPath="#_RM-A8Na_EeyDqtga5PEKEw" changeId="899e3e0e-6651-43ba-b86a-bddeec7946c2">
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Vocabularies']/@ownedRepresentations[name='Vocabulary%20Diagram']"/>
         <target xmi:type="oml:Vocabulary" href="src/main/oml/openmodelica.org/openmodelica/classes.oml#/"/>
+      </ownedRepresentationDescriptors>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_MspBgNhNEeyWRq-3hXYQog" name="Vocabulary Diagram" repPath="#_MshFsNhNEeyWRq-3hXYQog" changeId="ee06de45-9eda-4311-8dcb-69adeecc4f42">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Vocabularies']/@ownedRepresentations[name='Vocabulary%20Diagram']"/>
+        <target xmi:type="oml:Vocabulary" href="src/main/oml/openmodelica.org/openmodelica/modelica.oml#/"/>
       </ownedRepresentationDescriptors>
     </ownedViews>
   </viewpoint:DAnalysis>
@@ -4871,5 +4884,943 @@
     <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_RM_PENa_EeyDqtga5PEKEw"/>
     <activatedLayers xmi:type="description_1:Layer" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Vocabularies']/@ownedRepresentations[name='Vocabulary%20Diagram']/@defaultLayer"/>
     <target xmi:type="oml:Vocabulary" href="src/main/oml/openmodelica.org/openmodelica/classes.oml#/"/>
+  </diagram:DSemanticDiagram>
+  <diagram:DSemanticDiagram uid="_xUjXYNg-EeyWRq-3hXYQog">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_xV2X4Ng-EeyWRq-3hXYQog" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_xV2X4dg-EeyWRq-3hXYQog" type="Sirius" element="_xUjXYNg-EeyWRq-3hXYQog" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="_yh9lu9g-EeyWRq-3hXYQog" type="2003" element="_ygtogdg-EeyWRq-3hXYQog">
+          <children xmi:type="notation:Node" xmi:id="_yh-MwNg-EeyWRq-3hXYQog" type="5007"/>
+          <children xmi:type="notation:Node" xmi:id="_yh-Mwdg-EeyWRq-3hXYQog" type="7004">
+            <children xmi:type="notation:Node" xmi:id="_yiETY9g-EeyWRq-3hXYQog" type="3010" element="_yg4noNg-EeyWRq-3hXYQog">
+              <styles xmi:type="notation:FontStyle" xmi:id="_yiETZNg-EeyWRq-3hXYQog" fontName="Segoe UI" fontHeight="12"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_yiETZdg-EeyWRq-3hXYQog"/>
+            </children>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_yh-Mwtg-EeyWRq-3hXYQog"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_yh-Mw9g-EeyWRq-3hXYQog"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_yh9lvNg-EeyWRq-3hXYQog" fontName="Segoe UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_yh9lvdg-EeyWRq-3hXYQog" x="329" y="1008"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_7Exz8NhBEeyWRq-3hXYQog" type="2003" element="_7EoC9NhBEeyWRq-3hXYQog">
+          <children xmi:type="notation:Node" xmi:id="_7EybANhBEeyWRq-3hXYQog" type="5007"/>
+          <children xmi:type="notation:Node" xmi:id="_7EybAdhBEeyWRq-3hXYQog" type="7004">
+            <children xmi:type="notation:Node" xmi:id="_8F5Ss9hBEeyWRq-3hXYQog" type="3010" element="_8Fu6pNhBEeyWRq-3hXYQog">
+              <styles xmi:type="notation:FontStyle" xmi:id="_8F5StNhBEeyWRq-3hXYQog" fontName="Segoe UI" fontHeight="12"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_8F5StdhBEeyWRq-3hXYQog"/>
+            </children>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_7EybAthBEeyWRq-3hXYQog"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_7EybA9hBEeyWRq-3hXYQog"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_7Exz8dhBEeyWRq-3hXYQog" fontName="Segoe UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_7Exz8thBEeyWRq-3hXYQog"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_bEvpINhFEeyWRq-3hXYQog" type="2003" element="_bEsl0thFEeyWRq-3hXYQog">
+          <children xmi:type="notation:Node" xmi:id="_bEvpI9hFEeyWRq-3hXYQog" type="5007"/>
+          <children xmi:type="notation:Node" xmi:id="_bEvpJNhFEeyWRq-3hXYQog" type="7004">
+            <styles xmi:type="notation:SortingStyle" xmi:id="_bEvpJdhFEeyWRq-3hXYQog"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_bEvpJthFEeyWRq-3hXYQog"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_bEvpIdhFEeyWRq-3hXYQog" fontName="Segoe UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_bEvpIthFEeyWRq-3hXYQog"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_xV2X4tg-EeyWRq-3hXYQog"/>
+        <edges xmi:type="notation:Edge" xmi:id="_7E2scthBEeyWRq-3hXYQog" type="4001" element="_7EuwoNhBEeyWRq-3hXYQog" source="_yh9lu9g-EeyWRq-3hXYQog" target="_7Exz8NhBEeyWRq-3hXYQog">
+          <children xmi:type="notation:Node" xmi:id="_7E2sdthBEeyWRq-3hXYQog" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_7E2sd9hBEeyWRq-3hXYQog" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_7E2seNhBEeyWRq-3hXYQog" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_7E2sedhBEeyWRq-3hXYQog" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_7E2sethBEeyWRq-3hXYQog" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_7E2se9hBEeyWRq-3hXYQog" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_7E2sc9hBEeyWRq-3hXYQog" routing="Rectilinear"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_7E2sdNhBEeyWRq-3hXYQog" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_7E2sddhBEeyWRq-3hXYQog" points="[0, 0, 329, 1008]$[-329, -1008, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_7E3TgNhBEeyWRq-3hXYQog" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_7E3TgdhBEeyWRq-3hXYQog" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_bEwQMNhFEeyWRq-3hXYQog" type="4001" element="_bEtz8NhFEeyWRq-3hXYQog" source="_7Exz8NhBEeyWRq-3hXYQog" target="_bEvpINhFEeyWRq-3hXYQog">
+          <children xmi:type="notation:Node" xmi:id="_bEwQNNhFEeyWRq-3hXYQog" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_bEwQNdhFEeyWRq-3hXYQog" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_bEwQNthFEeyWRq-3hXYQog" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_bEwQN9hFEeyWRq-3hXYQog" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_bEwQONhFEeyWRq-3hXYQog" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_bEwQOdhFEeyWRq-3hXYQog" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_bEwQMdhFEeyWRq-3hXYQog" routing="Rectilinear"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_bEwQMthFEeyWRq-3hXYQog" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_bEwQM9hFEeyWRq-3hXYQog" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_bEw3QNhFEeyWRq-3hXYQog" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_bEw3QdhFEeyWRq-3hXYQog" id="(0.5,0.5)"/>
+        </edges>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_ygwEwtg-EeyWRq-3hXYQog" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_ygwr0Ng-EeyWRq-3hXYQog">
+        <computedStyleDescriptions xmi:type="style:FlatContainerStyleDescription" xmi:id="_ygwr0dg-EeyWRq-3hXYQog" borderSizeComputationExpression="1" labelSize="12" labelExpression="aql:diagram.target.oclAsType(oml::Ontology).getLabel(self)" iconPath="/io.opencaesar.rosetta.sirius.viewpoint/icons/i-icon.png" tooltipExpression="aql:view.getParentDiagram().oclAsType(diagram::DSemanticDiagram).target.oclAsType(oml::Ontology).getLabel(self)" backgroundStyle="GradientTopToBottom">
+          <borderColor xmi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          <labelColor xmi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          <backgroundColor xmi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+          <foregroundColor xmi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+        </computedStyleDescriptions>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_ygtogdg-EeyWRq-3hXYQog" name="«m:Model»&#xA;RLC" tooltipText="«m:Model»&#xA;RLC" outgoingEdges="_7EuwoNhBEeyWRq-3hXYQog">
+      <target xmi:type="oml:ConceptInstance" href="src/test/oml/examples/rlccombined.oml#RLC"/>
+      <semanticElements xmi:type="oml:ConceptInstance" href="src/test/oml/examples/rlccombined.oml#RLC"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_ygtogtg-EeyWRq-3hXYQog" labelSize="12" iconPath="/io.opencaesar.rosetta.sirius.viewpoint/icons/i-icon.png" borderSize="1" borderSizeComputationExpression="1" backgroundStyle="GradientTopToBottom" foregroundColor="255,255,255">
+        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@containerMappings[name='ConceptInstance']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@containerMappings[name='ConceptInstance']"/>
+      <ownedElements xmi:type="diagram:DNodeListElement" uid="_yg4noNg-EeyWRq-3hXYQog" name="m:hasName = &quot;RLC&quot;" tooltipText="m:hasName = &quot;RLC&quot;">
+        <target xmi:type="oml:ScalarPropertyValueAssertion" href="src/test/oml/examples/rlccombined.oml#//@ownedStatements.0/@ownedPropertyValues.0"/>
+        <semanticElements xmi:type="oml:ScalarPropertyValueAssertion" href="src/test/oml/examples/rlccombined.oml#//@ownedStatements.0/@ownedPropertyValues.0"/>
+        <ownedStyle xmi:type="diagram:Square" uid="_yg4nodg-EeyWRq-3hXYQog" labelSize="12" showIcon="false" labelAlignment="LEFT" labelPosition="node">
+          <description xmi:type="style:SquareDescription" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@containerMappings[name='ConceptInstance']/@subNodeMappings[name='Property%20Values']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@containerMappings[name='ConceptInstance']/@subNodeMappings[name='Property%20Values']"/>
+      </ownedElements>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_7EoC9NhBEeyWRq-3hXYQog" name="«m:Component»&#xA;RLC.sineVoltage" tooltipText="«m:Component»&#xA;RLC.sineVoltage" outgoingEdges="_bEtz8NhFEeyWRq-3hXYQog" incomingEdges="_7EuwoNhBEeyWRq-3hXYQog">
+      <target xmi:type="oml:ConceptInstance" href="src/test/oml/examples/rlccombined.oml#RLC.sineVoltage"/>
+      <semanticElements xmi:type="oml:ConceptInstance" href="src/test/oml/examples/rlccombined.oml#RLC.sineVoltage"/>
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_8FrQQ9hBEeyWRq-3hXYQog" labelSize="12" iconPath="/io.opencaesar.rosetta.sirius.viewpoint/icons/i-icon.png" borderSize="1" borderSizeComputationExpression="1" backgroundStyle="GradientTopToBottom" foregroundColor="255,255,255">
+        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@containerMappings[name='ConceptInstance']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@containerMappings[name='ConceptInstance']"/>
+      <ownedElements xmi:type="diagram:DNodeListElement" uid="_8Fu6pNhBEeyWRq-3hXYQog" name="m:hasName = &quot;sineVoltage&quot;" tooltipText="m:hasName = &quot;sineVoltage&quot;">
+        <target xmi:type="oml:ScalarPropertyValueAssertion" href="src/test/oml/examples/rlccombined.oml#//@ownedStatements.1/@ownedPropertyValues.0"/>
+        <semanticElements xmi:type="oml:ScalarPropertyValueAssertion" href="src/test/oml/examples/rlccombined.oml#//@ownedStatements.1/@ownedPropertyValues.0"/>
+        <ownedStyle xmi:type="diagram:Square" uid="_8Fu6pdhBEeyWRq-3hXYQog" labelSize="12" showIcon="false" labelAlignment="LEFT" labelPosition="node">
+          <description xmi:type="style:SquareDescription" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@containerMappings[name='ConceptInstance']/@subNodeMappings[name='Property%20Values']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@containerMappings[name='ConceptInstance']/@subNodeMappings[name='Property%20Values']"/>
+      </ownedElements>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_7EuwoNhBEeyWRq-3hXYQog" name="m:contains" sourceNode="_ygtogdg-EeyWRq-3hXYQog" targetNode="_7EoC9NhBEeyWRq-3hXYQog">
+      <target xmi:type="oml:LinkAssertion" href="src/test/oml/examples/rlccombined.oml#//@ownedStatements.0/@ownedLinks.0"/>
+      <semanticElements xmi:type="oml:LinkAssertion" href="src/test/oml/examples/rlccombined.oml#//@ownedStatements.0/@ownedLinks.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_7EuwodhBEeyWRq-3hXYQog" size="2" routingStyle="manhattan">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@edgeMappings[name='LinkAssertion']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_7EuwothBEeyWRq-3hXYQog" labelSize="12" showIcon="false"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@edgeMappings[name='LinkAssertion']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_bEsl0thFEeyWRq-3hXYQog" incomingEdges="_bEtz8NhFEeyWRq-3hXYQog">
+      <target xmi:type="oml:ConceptInstance" href="src/test/oml/examples/rlccombined.oml#|7"/>
+      <semanticElements xmi:type="oml:ConceptInstance" href="src/test/oml/examples/rlccombined.oml#|7"/>
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_bEsl09hFEeyWRq-3hXYQog" labelSize="12" iconPath="/io.opencaesar.rosetta.sirius.viewpoint/icons/i-icon.png" description="_ygwr0dg-EeyWRq-3hXYQog" borderSize="1" borderSizeComputationExpression="1" backgroundStyle="GradientTopToBottom"/>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@containerMappings[name='ConceptInstance']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_bEtz8NhFEeyWRq-3hXYQog" name="m:hasType" sourceNode="_7EoC9NhBEeyWRq-3hXYQog" targetNode="_bEsl0thFEeyWRq-3hXYQog">
+      <target xmi:type="oml:LinkAssertion" href="src/test/oml/examples/rlccombined.oml#//@ownedStatements.1/@ownedLinks.0"/>
+      <semanticElements xmi:type="oml:LinkAssertion" href="src/test/oml/examples/rlccombined.oml#//@ownedStatements.1/@ownedLinks.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_bEtz8dhFEeyWRq-3hXYQog" size="2" routingStyle="manhattan">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@edgeMappings[name='LinkAssertion']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_bEtz8thFEeyWRq-3hXYQog" labelSize="12" showIcon="false"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@edgeMappings[name='LinkAssertion']"/>
+    </ownedDiagramElements>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_xU25YNg-EeyWRq-3hXYQog"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer"/>
+    <target xmi:type="oml:Description" href="src/test/oml/examples/rlccombined.oml#/"/>
+  </diagram:DSemanticDiagram>
+  <diagram:DSemanticDiagram uid="_MshFsNhNEeyWRq-3hXYQog">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_Mst6ANhNEeyWRq-3hXYQog" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_MsuhENhNEeyWRq-3hXYQog" type="Sirius" element="_MshFsNhNEeyWRq-3hXYQog" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="_MwBssNhNEeyWRq-3hXYQog" type="2003" element="_MtsKYNhNEeyWRq-3hXYQog">
+          <children xmi:type="notation:Node" xmi:id="_MwCTwNhNEeyWRq-3hXYQog" type="5007"/>
+          <children xmi:type="notation:Node" xmi:id="_MwCTwdhNEeyWRq-3hXYQog" type="7004">
+            <styles xmi:type="notation:SortingStyle" xmi:id="_MwCTwthNEeyWRq-3hXYQog"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_MwCTw9hNEeyWRq-3hXYQog"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_MwBssdhNEeyWRq-3hXYQog" fontName="Segoe UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MwBssthNEeyWRq-3hXYQog" x="154" y="364"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_MwCTxNhNEeyWRq-3hXYQog" type="2003" element="_Mty4ENhNEeyWRq-3hXYQog">
+          <children xmi:type="notation:Node" xmi:id="_MwC60NhNEeyWRq-3hXYQog" type="5007"/>
+          <children xmi:type="notation:Node" xmi:id="_MwC60dhNEeyWRq-3hXYQog" type="7004">
+            <styles xmi:type="notation:SortingStyle" xmi:id="_MwC60thNEeyWRq-3hXYQog"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_MwC609hNEeyWRq-3hXYQog"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_MwCTxdhNEeyWRq-3hXYQog" fontName="Segoe UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MwCTxthNEeyWRq-3hXYQog" x="924" y="364"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_MwC61NhNEeyWRq-3hXYQog" type="2003" element="_Mt17YdhNEeyWRq-3hXYQog">
+          <children xmi:type="notation:Node" xmi:id="_MwC619hNEeyWRq-3hXYQog" type="5007"/>
+          <children xmi:type="notation:Node" xmi:id="_MwC62NhNEeyWRq-3hXYQog" type="7004">
+            <children xmi:type="notation:Node" xmi:id="_MwFXFNhNEeyWRq-3hXYQog" type="3010" element="_MuUcgNhNEeyWRq-3hXYQog">
+              <styles xmi:type="notation:FontStyle" xmi:id="_MwFXFdhNEeyWRq-3hXYQog" fontName="Segoe UI" fontHeight="12"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_MwFXFthNEeyWRq-3hXYQog"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_MwFXF9hNEeyWRq-3hXYQog" type="3010" element="_MuW4wNhNEeyWRq-3hXYQog">
+              <styles xmi:type="notation:FontStyle" xmi:id="_MwFXGNhNEeyWRq-3hXYQog" fontName="Segoe UI" fontHeight="12"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_MwFXGdhNEeyWRq-3hXYQog"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_MwFXGthNEeyWRq-3hXYQog" type="3010" element="_MuZVANhNEeyWRq-3hXYQog">
+              <styles xmi:type="notation:FontStyle" xmi:id="_MwFXG9hNEeyWRq-3hXYQog" fontName="Segoe UI" fontHeight="12"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_MwFXHNhNEeyWRq-3hXYQog"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_MwF-INhNEeyWRq-3hXYQog" type="3010" element="_MubxQNhNEeyWRq-3hXYQog">
+              <styles xmi:type="notation:FontStyle" xmi:id="_MwF-IdhNEeyWRq-3hXYQog" fontName="Segoe UI" fontHeight="12"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_MwF-IthNEeyWRq-3hXYQog"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_MwF-I9hNEeyWRq-3hXYQog" type="3010" element="_Muc_YNhNEeyWRq-3hXYQog">
+              <styles xmi:type="notation:FontStyle" xmi:id="_MwF-JNhNEeyWRq-3hXYQog" fontName="Segoe UI" fontHeight="12"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_MwF-JdhNEeyWRq-3hXYQog"/>
+            </children>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_MwC62dhNEeyWRq-3hXYQog"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_MwC62thNEeyWRq-3hXYQog"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_MwC61dhNEeyWRq-3hXYQog" fontName="Segoe UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MwC61thNEeyWRq-3hXYQog" x="1036" y="364"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_MwC629hNEeyWRq-3hXYQog" type="2003" element="_Mt3JgthNEeyWRq-3hXYQog">
+          <children xmi:type="notation:Node" xmi:id="_MwDh4NhNEeyWRq-3hXYQog" type="5007"/>
+          <children xmi:type="notation:Node" xmi:id="_MwDh4dhNEeyWRq-3hXYQog" type="7004">
+            <styles xmi:type="notation:SortingStyle" xmi:id="_MwDh4thNEeyWRq-3hXYQog"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_MwDh49hNEeyWRq-3hXYQog"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_MwC63NhNEeyWRq-3hXYQog" fontName="Segoe UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MwC63dhNEeyWRq-3hXYQog" x="784" y="254"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_MwDh5NhNEeyWRq-3hXYQog" type="2003" element="_Mt6M0dhNEeyWRq-3hXYQog">
+          <children xmi:type="notation:Node" xmi:id="_MwDh59hNEeyWRq-3hXYQog" type="5007"/>
+          <children xmi:type="notation:Node" xmi:id="_MwDh6NhNEeyWRq-3hXYQog" type="7004">
+            <children xmi:type="notation:Node" xmi:id="_MwF-JthNEeyWRq-3hXYQog" type="3010" element="_Mue0kNhNEeyWRq-3hXYQog">
+              <styles xmi:type="notation:FontStyle" xmi:id="_MwF-J9hNEeyWRq-3hXYQog" fontName="Segoe UI" fontHeight="12"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_MwF-KNhNEeyWRq-3hXYQog"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_MwF-KdhNEeyWRq-3hXYQog" type="3010" element="_MuhQ0NhNEeyWRq-3hXYQog">
+              <styles xmi:type="notation:FontStyle" xmi:id="_MwF-KthNEeyWRq-3hXYQog" fontName="Segoe UI" fontHeight="12"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_MwF-K9hNEeyWRq-3hXYQog"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_MwF-LNhNEeyWRq-3hXYQog" type="3010" element="_Muie8NhNEeyWRq-3hXYQog">
+              <styles xmi:type="notation:FontStyle" xmi:id="_MwF-LdhNEeyWRq-3hXYQog" fontName="Segoe UI" fontHeight="12"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_MwF-LthNEeyWRq-3hXYQog"/>
+            </children>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_MwDh6dhNEeyWRq-3hXYQog"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_MwDh6thNEeyWRq-3hXYQog"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_MwDh5dhNEeyWRq-3hXYQog" fontName="Segoe UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MwDh5thNEeyWRq-3hXYQog" x="1344" y="364"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_MwDh69hNEeyWRq-3hXYQog" type="2003" element="_Mt8CANhNEeyWRq-3hXYQog">
+          <children xmi:type="notation:Node" xmi:id="_MwEI8NhNEeyWRq-3hXYQog" type="5007"/>
+          <children xmi:type="notation:Node" xmi:id="_MwEI8dhNEeyWRq-3hXYQog" type="7004">
+            <styles xmi:type="notation:SortingStyle" xmi:id="_MwEI8thNEeyWRq-3hXYQog"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_MwEI89hNEeyWRq-3hXYQog"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_MwDh7NhNEeyWRq-3hXYQog" fontName="Segoe UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MwDh7dhNEeyWRq-3hXYQog" x="490" y="364"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_MwEI9NhNEeyWRq-3hXYQog" type="2003" element="_Mt9QIthNEeyWRq-3hXYQog">
+          <children xmi:type="notation:Node" xmi:id="_MwEI99hNEeyWRq-3hXYQog" type="5007"/>
+          <children xmi:type="notation:Node" xmi:id="_MwEI-NhNEeyWRq-3hXYQog" type="7004">
+            <styles xmi:type="notation:SortingStyle" xmi:id="_MwEI-dhNEeyWRq-3hXYQog"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_MwEI-thNEeyWRq-3hXYQog"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_MwEI9dhNEeyWRq-3hXYQog" fontName="Segoe UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MwEI9thNEeyWRq-3hXYQog" x="784" y="364"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_MwEI-9hNEeyWRq-3hXYQog" type="2003" element="_Mt-eQdhNEeyWRq-3hXYQog">
+          <children xmi:type="notation:Node" xmi:id="_MwEI_thNEeyWRq-3hXYQog" type="5007"/>
+          <children xmi:type="notation:Node" xmi:id="_MwEI_9hNEeyWRq-3hXYQog" type="7004">
+            <styles xmi:type="notation:SortingStyle" xmi:id="_MwEJANhNEeyWRq-3hXYQog"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_MwEJAdhNEeyWRq-3hXYQog"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_MwEI_NhNEeyWRq-3hXYQog" fontName="Segoe UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MwEI_dhNEeyWRq-3hXYQog" x="322" y="364"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_MwEJAthNEeyWRq-3hXYQog" type="2003" element="_MuATcdhNEeyWRq-3hXYQog">
+          <children xmi:type="notation:Node" xmi:id="_MwEJBdhNEeyWRq-3hXYQog" type="5007"/>
+          <children xmi:type="notation:Node" xmi:id="_MwEJBthNEeyWRq-3hXYQog" type="7004">
+            <styles xmi:type="notation:SortingStyle" xmi:id="_MwEJB9hNEeyWRq-3hXYQog"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_MwEJCNhNEeyWRq-3hXYQog"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_MwEJA9hNEeyWRq-3hXYQog" fontName="Segoe UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MwEJBNhNEeyWRq-3hXYQog" x="630" y="364"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_MwEJCdhNEeyWRq-3hXYQog" type="2003" element="_Mun-gNhNEeyWRq-3hXYQog">
+          <children xmi:type="notation:Node" xmi:id="_MwEwANhNEeyWRq-3hXYQog" type="5007"/>
+          <children xmi:type="notation:Node" xmi:id="_MwEwAdhNEeyWRq-3hXYQog" type="7004">
+            <styles xmi:type="notation:SortingStyle" xmi:id="_MwEwAthNEeyWRq-3hXYQog"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_MwEwA9hNEeyWRq-3hXYQog"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_MwEJCthNEeyWRq-3hXYQog" fontName="Segoe UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MwEJC9hNEeyWRq-3hXYQog" x="1302" y="140"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_MwEwBNhNEeyWRq-3hXYQog" type="2003" element="_MuqawNhNEeyWRq-3hXYQog">
+          <children xmi:type="notation:Node" xmi:id="_MwEwB9hNEeyWRq-3hXYQog" type="5007"/>
+          <children xmi:type="notation:Node" xmi:id="_MwEwCNhNEeyWRq-3hXYQog" type="7004">
+            <children xmi:type="notation:Node" xmi:id="_MwHMQNhNEeyWRq-3hXYQog" type="3010" element="_Mu3PENhNEeyWRq-3hXYQog">
+              <styles xmi:type="notation:FontStyle" xmi:id="_MwHMQdhNEeyWRq-3hXYQog" fontName="Segoe UI" fontHeight="12"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_MwHMQthNEeyWRq-3hXYQog"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_MwHMQ9hNEeyWRq-3hXYQog" type="3010" element="_Mu4dMNhNEeyWRq-3hXYQog">
+              <styles xmi:type="notation:FontStyle" xmi:id="_MwHMRNhNEeyWRq-3hXYQog" fontName="Segoe UI" fontHeight="12"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_MwHMRdhNEeyWRq-3hXYQog"/>
+            </children>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_MwEwCdhNEeyWRq-3hXYQog"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_MwEwCthNEeyWRq-3hXYQog"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_MwEwBdhNEeyWRq-3hXYQog" fontName="Segoe UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MwEwBthNEeyWRq-3hXYQog" x="1302"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_MwEwC9hNEeyWRq-3hXYQog" type="2003" element="_Mu_K4NhNEeyWRq-3hXYQog">
+          <children xmi:type="notation:Node" xmi:id="_MwFXENhNEeyWRq-3hXYQog" type="5007"/>
+          <children xmi:type="notation:Node" xmi:id="_MwFXEdhNEeyWRq-3hXYQog" type="7004">
+            <children xmi:type="notation:Node" xmi:id="_MwHMRthNEeyWRq-3hXYQog" type="3010" element="_MvEDYNhNEeyWRq-3hXYQog">
+              <styles xmi:type="notation:FontStyle" xmi:id="_MwHMR9hNEeyWRq-3hXYQog" fontName="Segoe UI" fontHeight="12"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_MwHMSNhNEeyWRq-3hXYQog"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_MwHMSdhNEeyWRq-3hXYQog" type="3010" element="_MvFRgNhNEeyWRq-3hXYQog">
+              <styles xmi:type="notation:FontStyle" xmi:id="_MwHMSthNEeyWRq-3hXYQog" fontName="Segoe UI" fontHeight="12"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_MwHMS9hNEeyWRq-3hXYQog"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_MwHMTNhNEeyWRq-3hXYQog" type="3010" element="_MvHGsdhNEeyWRq-3hXYQog">
+              <styles xmi:type="notation:FontStyle" xmi:id="_MwHMTdhNEeyWRq-3hXYQog" fontName="Segoe UI" fontHeight="12"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_MwHMTthNEeyWRq-3hXYQog"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_MwHMT9hNEeyWRq-3hXYQog" type="3010" element="_MvHtwdhNEeyWRq-3hXYQog">
+              <styles xmi:type="notation:FontStyle" xmi:id="_MwHMUNhNEeyWRq-3hXYQog" fontName="Segoe UI" fontHeight="12"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_MwHMUdhNEeyWRq-3hXYQog"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_MwHMUthNEeyWRq-3hXYQog" type="3010" element="_MvIU0dhNEeyWRq-3hXYQog">
+              <styles xmi:type="notation:FontStyle" xmi:id="_MwHMU9hNEeyWRq-3hXYQog" fontName="Segoe UI" fontHeight="12"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_MwHMVNhNEeyWRq-3hXYQog"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_MwHzUNhNEeyWRq-3hXYQog" type="3010" element="_MvIU09hNEeyWRq-3hXYQog">
+              <styles xmi:type="notation:FontStyle" xmi:id="_MwHzUdhNEeyWRq-3hXYQog" fontName="Segoe UI" fontHeight="12"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_MwHzUthNEeyWRq-3hXYQog"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_MwHzU9hNEeyWRq-3hXYQog" type="3010" element="_MvI74dhNEeyWRq-3hXYQog">
+              <styles xmi:type="notation:FontStyle" xmi:id="_MwHzVNhNEeyWRq-3hXYQog" fontName="Segoe UI" fontHeight="12"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_MwHzVdhNEeyWRq-3hXYQog"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_MwHzVthNEeyWRq-3hXYQog" type="3010" element="_MvI749hNEeyWRq-3hXYQog">
+              <styles xmi:type="notation:FontStyle" xmi:id="_MwHzV9hNEeyWRq-3hXYQog" fontName="Segoe UI" fontHeight="12"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_MwHzWNhNEeyWRq-3hXYQog"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_MwIaYNhNEeyWRq-3hXYQog" type="3010" element="_MvKKANhNEeyWRq-3hXYQog">
+              <styles xmi:type="notation:FontStyle" xmi:id="_MwIaYdhNEeyWRq-3hXYQog" fontName="Segoe UI" fontHeight="12"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_MwIaYthNEeyWRq-3hXYQog"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_MwIaY9hNEeyWRq-3hXYQog" type="3010" element="_MvKxENhNEeyWRq-3hXYQog">
+              <styles xmi:type="notation:FontStyle" xmi:id="_MwIaZNhNEeyWRq-3hXYQog" fontName="Segoe UI" fontHeight="12"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_MwIaZdhNEeyWRq-3hXYQog"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_MwIaZthNEeyWRq-3hXYQog" type="3010" element="_MvKxEthNEeyWRq-3hXYQog">
+              <styles xmi:type="notation:FontStyle" xmi:id="_MwIaZ9hNEeyWRq-3hXYQog" fontName="Segoe UI" fontHeight="12"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_MwIaaNhNEeyWRq-3hXYQog"/>
+            </children>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_MwFXEthNEeyWRq-3hXYQog"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_MwFXE9hNEeyWRq-3hXYQog"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_MwEwDNhNEeyWRq-3hXYQog" fontName="Segoe UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MwEwDdhNEeyWRq-3hXYQog" x="-1"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_MsuhEdhNEeyWRq-3hXYQog"/>
+        <edges xmi:type="notation:Edge" xmi:id="_MwJogNhNEeyWRq-3hXYQog" type="4001" element="_MvNNUNhNEeyWRq-3hXYQog" source="_MwC629hNEeyWRq-3hXYQog" target="_MwC629hNEeyWRq-3hXYQog">
+          <children xmi:type="notation:Node" xmi:id="_MwK2oNhNEeyWRq-3hXYQog" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MwK2odhNEeyWRq-3hXYQog" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_MwK2othNEeyWRq-3hXYQog" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MwK2o9hNEeyWRq-3hXYQog" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_MwK2pNhNEeyWRq-3hXYQog" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MwK2pdhNEeyWRq-3hXYQog" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_MwJogdhNEeyWRq-3hXYQog" routing="Rectilinear"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_MwJogthNEeyWRq-3hXYQog" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_MwJog9hNEeyWRq-3hXYQog" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_MwUnoNhNEeyWRq-3hXYQog" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_MwUnodhNEeyWRq-3hXYQog" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_MwVOsNhNEeyWRq-3hXYQog" type="4001" element="_MvW-UNhNEeyWRq-3hXYQog" source="_MwEJCdhNEeyWRq-3hXYQog" target="_MwEwBNhNEeyWRq-3hXYQog">
+          <children xmi:type="notation:Node" xmi:id="_MwVOtNhNEeyWRq-3hXYQog" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MwVOtdhNEeyWRq-3hXYQog" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_MwVOtthNEeyWRq-3hXYQog" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MwVOt9hNEeyWRq-3hXYQog" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_MwVOuNhNEeyWRq-3hXYQog" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MwVOudhNEeyWRq-3hXYQog" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_MwVOsdhNEeyWRq-3hXYQog" routing="Rectilinear"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_MwVOsthNEeyWRq-3hXYQog" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_MwVOs9hNEeyWRq-3hXYQog" points="[0, -24, -51, 104]$[51, -84, 0, 44]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_MweYoNhNEeyWRq-3hXYQog" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_MweYodhNEeyWRq-3hXYQog" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_MweYothNEeyWRq-3hXYQog" type="4001" element="_MvYzgNhNEeyWRq-3hXYQog" source="_MwDh5NhNEeyWRq-3hXYQog" target="_MwC629hNEeyWRq-3hXYQog">
+          <children xmi:type="notation:Node" xmi:id="_MweYpthNEeyWRq-3hXYQog" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MweYp9hNEeyWRq-3hXYQog" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_MweYqNhNEeyWRq-3hXYQog" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MweYqdhNEeyWRq-3hXYQog" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_MweYqthNEeyWRq-3hXYQog" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MweYq9hNEeyWRq-3hXYQog" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_MweYo9hNEeyWRq-3hXYQog" routing="Rectilinear"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_MweYpNhNEeyWRq-3hXYQog" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_MweYpdhNEeyWRq-3hXYQog" points="[0, -79, 639, 85]$[-639, -139, 0, 25]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_MwfmwNhNEeyWRq-3hXYQog" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_MwfmwdhNEeyWRq-3hXYQog" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_MwfmwthNEeyWRq-3hXYQog" type="4001" element="_Mv2GgNhNEeyWRq-3hXYQog" source="_MwEJCdhNEeyWRq-3hXYQog" target="_MwEwBNhNEeyWRq-3hXYQog">
+          <children xmi:type="notation:Node" xmi:id="_MwfmxthNEeyWRq-3hXYQog" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Mwfmx9hNEeyWRq-3hXYQog" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_MwfmyNhNEeyWRq-3hXYQog" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MwfmydhNEeyWRq-3hXYQog" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_MwfmythNEeyWRq-3hXYQog" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Mwfmy9hNEeyWRq-3hXYQog" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_Mwfmw9hNEeyWRq-3hXYQog" routing="Rectilinear"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_MwfmxNhNEeyWRq-3hXYQog" fontName="Segoe UI"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_MwfmxdhNEeyWRq-3hXYQog" points="[0, -24, -51, 104]$[51, -84, 0, 44]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_MwgN0NhNEeyWRq-3hXYQog" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_MwgN0dhNEeyWRq-3hXYQog" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_MwgN0thNEeyWRq-3hXYQog" type="4001" element="_Mv2tkdhNEeyWRq-3hXYQog" source="_MwC629hNEeyWRq-3hXYQog" target="_MwEJCdhNEeyWRq-3hXYQog">
+          <children xmi:type="notation:Node" xmi:id="_Mwg04NhNEeyWRq-3hXYQog" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Mwg04dhNEeyWRq-3hXYQog" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_Mwg04thNEeyWRq-3hXYQog" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Mwg049hNEeyWRq-3hXYQog" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_Mwg05NhNEeyWRq-3hXYQog" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Mwg05dhNEeyWRq-3hXYQog" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_MwgN09hNEeyWRq-3hXYQog" routing="Rectilinear"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_MwgN1NhNEeyWRq-3hXYQog" fontName="Segoe UI"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_MwgN1dhNEeyWRq-3hXYQog" points="[0, -24, -536, 85]$[536, -84, 0, 25]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Mwg05thNEeyWRq-3hXYQog" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Mwg059hNEeyWRq-3hXYQog" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_Mwg06NhNEeyWRq-3hXYQog" type="4001" element="_Mv3UodhNEeyWRq-3hXYQog" source="_MwEI9NhNEeyWRq-3hXYQog" target="_MwC629hNEeyWRq-3hXYQog">
+          <children xmi:type="notation:Node" xmi:id="_Mwhb8NhNEeyWRq-3hXYQog" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Mwhb8dhNEeyWRq-3hXYQog" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_Mwhb8thNEeyWRq-3hXYQog" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Mwhb89hNEeyWRq-3hXYQog" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_Mwhb9NhNEeyWRq-3hXYQog" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Mwhb9dhNEeyWRq-3hXYQog" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_Mwg06dhNEeyWRq-3hXYQog" routing="Rectilinear"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_Mwg06thNEeyWRq-3hXYQog" fontName="Segoe UI"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Mwg069hNEeyWRq-3hXYQog" points="[0, -79, 0, 85]$[0, -139, 0, 25]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_MwiDANhNEeyWRq-3hXYQog" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_MwiDAdhNEeyWRq-3hXYQog" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_MwiDAthNEeyWRq-3hXYQog" type="4001" element="_Mv3UpNhNEeyWRq-3hXYQog" source="_MwCTxNhNEeyWRq-3hXYQog" target="_MwC629hNEeyWRq-3hXYQog">
+          <children xmi:type="notation:Node" xmi:id="_MwiDBthNEeyWRq-3hXYQog" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MwiDB9hNEeyWRq-3hXYQog" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_MwiDCNhNEeyWRq-3hXYQog" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MwiDCdhNEeyWRq-3hXYQog" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_MwiDCthNEeyWRq-3hXYQog" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MwiDC9hNEeyWRq-3hXYQog" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_MwiDA9hNEeyWRq-3hXYQog" routing="Rectilinear"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_MwiDBNhNEeyWRq-3hXYQog" fontName="Segoe UI"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_MwiDBdhNEeyWRq-3hXYQog" points="[0, -79, 130, 85]$[-130, -139, 0, 25]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_MwiqENhNEeyWRq-3hXYQog" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_MwiqEdhNEeyWRq-3hXYQog" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_MwiqEthNEeyWRq-3hXYQog" type="4001" element="_Mv3Up9hNEeyWRq-3hXYQog" source="_MwDh69hNEeyWRq-3hXYQog" target="_MwC629hNEeyWRq-3hXYQog">
+          <children xmi:type="notation:Node" xmi:id="_MwjRINhNEeyWRq-3hXYQog" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MwjRIdhNEeyWRq-3hXYQog" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_MwjRIthNEeyWRq-3hXYQog" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MwjRI9hNEeyWRq-3hXYQog" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_MwjRJNhNEeyWRq-3hXYQog" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MwjRJdhNEeyWRq-3hXYQog" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_MwiqE9hNEeyWRq-3hXYQog" routing="Rectilinear"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_MwiqFNhNEeyWRq-3hXYQog" fontName="Segoe UI"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_MwiqFdhNEeyWRq-3hXYQog" points="[0, -79, -289, 85]$[289, -139, 0, 25]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Mwj4MNhNEeyWRq-3hXYQog" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Mwj4MdhNEeyWRq-3hXYQog" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_Mwj4MthNEeyWRq-3hXYQog" type="4001" element="_Mv37sthNEeyWRq-3hXYQog" source="_MwEI-9hNEeyWRq-3hXYQog" target="_MwC629hNEeyWRq-3hXYQog">
+          <children xmi:type="notation:Node" xmi:id="_Mwj4NthNEeyWRq-3hXYQog" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Mwj4N9hNEeyWRq-3hXYQog" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_Mwj4ONhNEeyWRq-3hXYQog" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Mwj4OdhNEeyWRq-3hXYQog" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_Mwj4OthNEeyWRq-3hXYQog" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Mwj4O9hNEeyWRq-3hXYQog" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_Mwj4M9hNEeyWRq-3hXYQog" routing="Rectilinear"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_Mwj4NNhNEeyWRq-3hXYQog" fontName="Segoe UI"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Mwj4NdhNEeyWRq-3hXYQog" points="[0, -79, -441, 85]$[441, -139, 0, 25]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_MwkfQNhNEeyWRq-3hXYQog" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_MwkfQdhNEeyWRq-3hXYQog" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_MwkfQthNEeyWRq-3hXYQog" type="4001" element="_Mv37tdhNEeyWRq-3hXYQog" source="_MwEJAthNEeyWRq-3hXYQog" target="_MwC629hNEeyWRq-3hXYQog">
+          <children xmi:type="notation:Node" xmi:id="_MwkfRthNEeyWRq-3hXYQog" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MwkfR9hNEeyWRq-3hXYQog" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_MwkfSNhNEeyWRq-3hXYQog" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MwkfSdhNEeyWRq-3hXYQog" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_MwkfSthNEeyWRq-3hXYQog" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MwkfS9hNEeyWRq-3hXYQog" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_MwkfQ9hNEeyWRq-3hXYQog" routing="Rectilinear"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_MwkfRNhNEeyWRq-3hXYQog" fontName="Segoe UI"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_MwkfRdhNEeyWRq-3hXYQog" points="[0, -79, -143, 85]$[143, -139, 0, 25]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_MwlGUNhNEeyWRq-3hXYQog" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_MwlGUdhNEeyWRq-3hXYQog" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_MwlGUthNEeyWRq-3hXYQog" type="4001" element="_Mv37uNhNEeyWRq-3hXYQog" source="_MwBssNhNEeyWRq-3hXYQog" target="_MwC629hNEeyWRq-3hXYQog">
+          <children xmi:type="notation:Node" xmi:id="_MwlGVthNEeyWRq-3hXYQog" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MwlGV9hNEeyWRq-3hXYQog" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_MwlGWNhNEeyWRq-3hXYQog" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MwlGWdhNEeyWRq-3hXYQog" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_MwlGWthNEeyWRq-3hXYQog" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MwlGW9hNEeyWRq-3hXYQog" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_MwlGU9hNEeyWRq-3hXYQog" routing="Rectilinear"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_MwlGVNhNEeyWRq-3hXYQog" fontName="Segoe UI"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_MwlGVdhNEeyWRq-3hXYQog" points="[0, -79, -598, 85]$[598, -139, 0, 25]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_MwlGXNhNEeyWRq-3hXYQog" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_MwlGXdhNEeyWRq-3hXYQog" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_MwltYNhNEeyWRq-3hXYQog" type="4001" element="_Mv4iwthNEeyWRq-3hXYQog" source="_MwC61NhNEeyWRq-3hXYQog" target="_MwC629hNEeyWRq-3hXYQog">
+          <children xmi:type="notation:Node" xmi:id="_MwltZNhNEeyWRq-3hXYQog" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MwltZdhNEeyWRq-3hXYQog" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_MwltZthNEeyWRq-3hXYQog" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MwltZ9hNEeyWRq-3hXYQog" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_MwltaNhNEeyWRq-3hXYQog" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MwltadhNEeyWRq-3hXYQog" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_MwltYdhNEeyWRq-3hXYQog" routing="Rectilinear"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_MwltYthNEeyWRq-3hXYQog" fontName="Segoe UI"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_MwltY9hNEeyWRq-3hXYQog" points="[0, -79, 346, 85]$[-346, -139, 0, 25]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_MwmUcNhNEeyWRq-3hXYQog" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_MwmUcdhNEeyWRq-3hXYQog" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_MwmUcthNEeyWRq-3hXYQog" type="4001" element="_Mv4ixdhNEeyWRq-3hXYQog" source="_MwDh5NhNEeyWRq-3hXYQog" target="_MwEwBNhNEeyWRq-3hXYQog">
+          <children xmi:type="notation:Node" xmi:id="_MwmUdthNEeyWRq-3hXYQog" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MwmUd9hNEeyWRq-3hXYQog" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_MwmUeNhNEeyWRq-3hXYQog" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MwmUedhNEeyWRq-3hXYQog" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_MwmUethNEeyWRq-3hXYQog" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MwmUe9hNEeyWRq-3hXYQog" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_MwmUc9hNEeyWRq-3hXYQog" routing="Rectilinear"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_MwmUdNhNEeyWRq-3hXYQog" fontName="Segoe UI"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_MwmUddhNEeyWRq-3hXYQog" points="[0, -79, 52, 322]$[-1, -297, 51, 104]$[-52, -357, 0, 44]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Mwm7gNhNEeyWRq-3hXYQog" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Mwm7gdhNEeyWRq-3hXYQog" id="(0.5,0.5)"/>
+        </edges>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_Mv-CUNhNEeyWRq-3hXYQog" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_Mv-CUdhNEeyWRq-3hXYQog"/>
+    </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_MtsKYNhNEeyWRq-3hXYQog" name="Package" tooltipText="Package" outgoingEdges="_Mv37uNhNEeyWRq-3hXYQog">
+      <target xmi:type="oml:Concept" href="src/main/oml/openmodelica.org/openmodelica/modelica.oml#Package"/>
+      <semanticElements xmi:type="oml:Concept" href="src/main/oml/openmodelica.org/openmodelica/modelica.oml#Package"/>
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_MtxC4NhNEeyWRq-3hXYQog" labelSize="12" iconPath="/io.opencaesar.rosetta.sirius.viewpoint/icons/c-icon.png" borderSize="1" borderSizeComputationExpression="1" backgroundStyle="GradientTopToBottom" foregroundColor="255,255,255">
+        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Vocabularies']/@ownedRepresentations[name='Vocabulary%20Diagram']/@defaultLayer/@containerMappings[name='Concept']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Vocabularies']/@ownedRepresentations[name='Vocabulary%20Diagram']/@defaultLayer/@containerMappings[name='Concept']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_Mty4ENhNEeyWRq-3hXYQog" name="Block" tooltipText="Block" outgoingEdges="_Mv3UpNhNEeyWRq-3hXYQog">
+      <target xmi:type="oml:Concept" href="src/main/oml/openmodelica.org/openmodelica/modelica.oml#Block"/>
+      <semanticElements xmi:type="oml:Concept" href="src/main/oml/openmodelica.org/openmodelica/modelica.oml#Block"/>
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_Mt1UUNhNEeyWRq-3hXYQog" labelSize="12" iconPath="/io.opencaesar.rosetta.sirius.viewpoint/icons/c-icon.png" borderSize="1" borderSizeComputationExpression="1" backgroundStyle="GradientTopToBottom" foregroundColor="255,255,255">
+        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Vocabularies']/@ownedRepresentations[name='Vocabulary%20Diagram']/@defaultLayer/@containerMappings[name='Concept']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Vocabularies']/@ownedRepresentations[name='Vocabulary%20Diagram']/@defaultLayer/@containerMappings[name='Concept']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_Mt17YdhNEeyWRq-3hXYQog" name="Type" tooltipText="Type" outgoingEdges="_Mv4iwthNEeyWRq-3hXYQog">
+      <target xmi:type="oml:Concept" href="src/main/oml/openmodelica.org/openmodelica/modelica.oml#Type"/>
+      <semanticElements xmi:type="oml:Concept" href="src/main/oml/openmodelica.org/openmodelica/modelica.oml#Type"/>
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_Mt3JgNhNEeyWRq-3hXYQog" labelSize="12" iconPath="/io.opencaesar.rosetta.sirius.viewpoint/icons/c-icon.png" borderSize="1" borderSizeComputationExpression="1" backgroundStyle="GradientTopToBottom" foregroundColor="255,255,255">
+        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Vocabularies']/@ownedRepresentations[name='Vocabulary%20Diagram']/@defaultLayer/@containerMappings[name='Concept']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Vocabularies']/@ownedRepresentations[name='Vocabulary%20Diagram']/@defaultLayer/@containerMappings[name='Concept']"/>
+      <ownedElements xmi:type="diagram:DNodeListElement" uid="_MuUcgNhNEeyWRq-3hXYQog" name="hasQuantity : xsd:string" tooltipText="hasQuantity : xsd:string">
+        <target xmi:type="oml:ScalarProperty" href="src/main/oml/openmodelica.org/openmodelica/modelica.oml#hasQuantity"/>
+        <semanticElements xmi:type="oml:ScalarProperty" href="src/main/oml/openmodelica.org/openmodelica/modelica.oml#hasQuantity"/>
+        <ownedStyle xmi:type="diagram:Square" uid="_MuWRsNhNEeyWRq-3hXYQog" labelSize="12" showIcon="false" labelAlignment="LEFT" labelPosition="node">
+          <description xmi:type="style:SquareDescription" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Vocabularies']/@ownedRepresentations[name='Vocabulary%20Diagram']/@defaultLayer/@containerMappings[name='Concept']/@subNodeMappings[name='Properties']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Vocabularies']/@ownedRepresentations[name='Vocabulary%20Diagram']/@defaultLayer/@containerMappings[name='Concept']/@subNodeMappings[name='Properties']"/>
+      </ownedElements>
+      <ownedElements xmi:type="diagram:DNodeListElement" uid="_MuW4wNhNEeyWRq-3hXYQog" name="hasUnit : xsd:string" tooltipText="hasUnit : xsd:string">
+        <target xmi:type="oml:ScalarProperty" href="src/main/oml/openmodelica.org/openmodelica/modelica.oml#hasUnit"/>
+        <semanticElements xmi:type="oml:ScalarProperty" href="src/main/oml/openmodelica.org/openmodelica/modelica.oml#hasUnit"/>
+        <ownedStyle xmi:type="diagram:Square" uid="_MuYt8NhNEeyWRq-3hXYQog" labelSize="12" showIcon="false" labelAlignment="LEFT" labelPosition="node">
+          <description xmi:type="style:SquareDescription" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Vocabularies']/@ownedRepresentations[name='Vocabulary%20Diagram']/@defaultLayer/@containerMappings[name='Concept']/@subNodeMappings[name='Properties']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Vocabularies']/@ownedRepresentations[name='Vocabulary%20Diagram']/@defaultLayer/@containerMappings[name='Concept']/@subNodeMappings[name='Properties']"/>
+      </ownedElements>
+      <ownedElements xmi:type="diagram:DNodeListElement" uid="_MuZVANhNEeyWRq-3hXYQog" name="hasDisplayUnit : xsd:string" tooltipText="hasDisplayUnit : xsd:string">
+        <target xmi:type="oml:ScalarProperty" href="src/main/oml/openmodelica.org/openmodelica/modelica.oml#hasDisplayUnit"/>
+        <semanticElements xmi:type="oml:ScalarProperty" href="src/main/oml/openmodelica.org/openmodelica/modelica.oml#hasDisplayUnit"/>
+        <ownedStyle xmi:type="diagram:Square" uid="_MuajINhNEeyWRq-3hXYQog" labelSize="12" showIcon="false" labelAlignment="LEFT" labelPosition="node">
+          <description xmi:type="style:SquareDescription" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Vocabularies']/@ownedRepresentations[name='Vocabulary%20Diagram']/@defaultLayer/@containerMappings[name='Concept']/@subNodeMappings[name='Properties']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Vocabularies']/@ownedRepresentations[name='Vocabulary%20Diagram']/@defaultLayer/@containerMappings[name='Concept']/@subNodeMappings[name='Properties']"/>
+      </ownedElements>
+      <ownedElements xmi:type="diagram:DNodeListElement" uid="_MubxQNhNEeyWRq-3hXYQog" name="hasStartDecimal : xsd:decimal" tooltipText="hasStartDecimal : xsd:decimal">
+        <target xmi:type="oml:ScalarProperty" href="src/main/oml/openmodelica.org/openmodelica/modelica.oml#hasStartDecimal"/>
+        <semanticElements xmi:type="oml:ScalarProperty" href="src/main/oml/openmodelica.org/openmodelica/modelica.oml#hasStartDecimal"/>
+        <ownedStyle xmi:type="diagram:Square" uid="_MucYUNhNEeyWRq-3hXYQog" labelSize="12" showIcon="false" labelAlignment="LEFT" labelPosition="node">
+          <description xmi:type="style:SquareDescription" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Vocabularies']/@ownedRepresentations[name='Vocabulary%20Diagram']/@defaultLayer/@containerMappings[name='Concept']/@subNodeMappings[name='Properties']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Vocabularies']/@ownedRepresentations[name='Vocabulary%20Diagram']/@defaultLayer/@containerMappings[name='Concept']/@subNodeMappings[name='Properties']"/>
+      </ownedElements>
+      <ownedElements xmi:type="diagram:DNodeListElement" uid="_Muc_YNhNEeyWRq-3hXYQog" name="hasFixed : xsd:boolean" tooltipText="hasFixed : xsd:boolean">
+        <target xmi:type="oml:ScalarProperty" href="src/main/oml/openmodelica.org/openmodelica/modelica.oml#hasFixed"/>
+        <semanticElements xmi:type="oml:ScalarProperty" href="src/main/oml/openmodelica.org/openmodelica/modelica.oml#hasFixed"/>
+        <ownedStyle xmi:type="diagram:Square" uid="_MudmcNhNEeyWRq-3hXYQog" labelSize="12" showIcon="false" labelAlignment="LEFT" labelPosition="node">
+          <description xmi:type="style:SquareDescription" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Vocabularies']/@ownedRepresentations[name='Vocabulary%20Diagram']/@defaultLayer/@containerMappings[name='Concept']/@subNodeMappings[name='Properties']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Vocabularies']/@ownedRepresentations[name='Vocabulary%20Diagram']/@defaultLayer/@containerMappings[name='Concept']/@subNodeMappings[name='Properties']"/>
+      </ownedElements>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_Mt3JgthNEeyWRq-3hXYQog" name="Class" tooltipText="Class" outgoingEdges="_MvNNUNhNEeyWRq-3hXYQog _Mv2tkdhNEeyWRq-3hXYQog" incomingEdges="_MvNNUNhNEeyWRq-3hXYQog _MvYzgNhNEeyWRq-3hXYQog _Mv3UodhNEeyWRq-3hXYQog _Mv3UpNhNEeyWRq-3hXYQog _Mv3Up9hNEeyWRq-3hXYQog _Mv37sthNEeyWRq-3hXYQog _Mv37tdhNEeyWRq-3hXYQog _Mv37uNhNEeyWRq-3hXYQog _Mv4iwthNEeyWRq-3hXYQog">
+      <target xmi:type="oml:Concept" href="src/main/oml/openmodelica.org/openmodelica/modelica.oml#Class"/>
+      <semanticElements xmi:type="oml:Concept" href="src/main/oml/openmodelica.org/openmodelica/modelica.oml#Class"/>
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_Mt4XoNhNEeyWRq-3hXYQog" labelSize="12" iconPath="/io.opencaesar.rosetta.sirius.viewpoint/icons/c-icon.png" borderSize="1" borderSizeComputationExpression="1" backgroundStyle="GradientTopToBottom" foregroundColor="255,255,255">
+        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Vocabularies']/@ownedRepresentations[name='Vocabulary%20Diagram']/@defaultLayer/@containerMappings[name='Concept']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Vocabularies']/@ownedRepresentations[name='Vocabulary%20Diagram']/@defaultLayer/@containerMappings[name='Concept']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_Mt6M0dhNEeyWRq-3hXYQog" name="Component" tooltipText="Component" outgoingEdges="_MvYzgNhNEeyWRq-3hXYQog _Mv4ixdhNEeyWRq-3hXYQog">
+      <target xmi:type="oml:Concept" href="src/main/oml/openmodelica.org/openmodelica/modelica.oml#Component"/>
+      <semanticElements xmi:type="oml:Concept" href="src/main/oml/openmodelica.org/openmodelica/modelica.oml#Component"/>
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_Mt7a8NhNEeyWRq-3hXYQog" labelSize="12" iconPath="/io.opencaesar.rosetta.sirius.viewpoint/icons/c-icon.png" borderSize="1" borderSizeComputationExpression="1" backgroundStyle="GradientTopToBottom" foregroundColor="255,255,255">
+        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Vocabularies']/@ownedRepresentations[name='Vocabulary%20Diagram']/@defaultLayer/@containerMappings[name='Concept']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Vocabularies']/@ownedRepresentations[name='Vocabulary%20Diagram']/@defaultLayer/@containerMappings[name='Concept']"/>
+      <ownedElements xmi:type="diagram:DNodeListElement" uid="_Mue0kNhNEeyWRq-3hXYQog" name="hasPrefix : Prefix" tooltipText="hasPrefix : Prefix">
+        <target xmi:type="oml:ScalarProperty" href="src/main/oml/openmodelica.org/openmodelica/modelica.oml#hasPrefix"/>
+        <semanticElements xmi:type="oml:ScalarProperty" href="src/main/oml/openmodelica.org/openmodelica/modelica.oml#hasPrefix"/>
+        <ownedStyle xmi:type="diagram:Square" uid="_MugCsNhNEeyWRq-3hXYQog" labelSize="12" showIcon="false" labelAlignment="LEFT" labelPosition="node">
+          <description xmi:type="style:SquareDescription" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Vocabularies']/@ownedRepresentations[name='Vocabulary%20Diagram']/@defaultLayer/@containerMappings[name='Concept']/@subNodeMappings[name='Properties']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Vocabularies']/@ownedRepresentations[name='Vocabulary%20Diagram']/@defaultLayer/@containerMappings[name='Concept']/@subNodeMappings[name='Properties']"/>
+      </ownedElements>
+      <ownedElements xmi:type="diagram:DNodeListElement" uid="_MuhQ0NhNEeyWRq-3hXYQog" name="hasInitialValue : rdfs:Literal" tooltipText="hasInitialValue : rdfs:Literal">
+        <target xmi:type="oml:ScalarProperty" href="src/main/oml/openmodelica.org/openmodelica/modelica.oml#hasInitialValue"/>
+        <semanticElements xmi:type="oml:ScalarProperty" href="src/main/oml/openmodelica.org/openmodelica/modelica.oml#hasInitialValue"/>
+        <ownedStyle xmi:type="diagram:Square" uid="_Muh34NhNEeyWRq-3hXYQog" labelSize="12" showIcon="false" labelAlignment="LEFT" labelPosition="node">
+          <description xmi:type="style:SquareDescription" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Vocabularies']/@ownedRepresentations[name='Vocabulary%20Diagram']/@defaultLayer/@containerMappings[name='Concept']/@subNodeMappings[name='Properties']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Vocabularies']/@ownedRepresentations[name='Vocabulary%20Diagram']/@defaultLayer/@containerMappings[name='Concept']/@subNodeMappings[name='Properties']"/>
+      </ownedElements>
+      <ownedElements xmi:type="diagram:DNodeListElement" uid="_Muie8NhNEeyWRq-3hXYQog" name="hasValue : rdfs:Literal" tooltipText="hasValue : rdfs:Literal">
+        <target xmi:type="oml:ScalarProperty" href="src/main/oml/openmodelica.org/openmodelica/modelica.oml#hasValue"/>
+        <semanticElements xmi:type="oml:ScalarProperty" href="src/main/oml/openmodelica.org/openmodelica/modelica.oml#hasValue"/>
+        <ownedStyle xmi:type="diagram:Square" uid="_MukUINhNEeyWRq-3hXYQog" labelSize="12" showIcon="false" labelAlignment="LEFT" labelPosition="node">
+          <description xmi:type="style:SquareDescription" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Vocabularies']/@ownedRepresentations[name='Vocabulary%20Diagram']/@defaultLayer/@containerMappings[name='Concept']/@subNodeMappings[name='Properties']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Vocabularies']/@ownedRepresentations[name='Vocabulary%20Diagram']/@defaultLayer/@containerMappings[name='Concept']/@subNodeMappings[name='Properties']"/>
+      </ownedElements>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_Mt8CANhNEeyWRq-3hXYQog" name="Record" tooltipText="Record" outgoingEdges="_Mv3Up9hNEeyWRq-3hXYQog">
+      <target xmi:type="oml:Concept" href="src/main/oml/openmodelica.org/openmodelica/modelica.oml#Record"/>
+      <semanticElements xmi:type="oml:Concept" href="src/main/oml/openmodelica.org/openmodelica/modelica.oml#Record"/>
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_Mt9QINhNEeyWRq-3hXYQog" labelSize="12" iconPath="/io.opencaesar.rosetta.sirius.viewpoint/icons/c-icon.png" borderSize="1" borderSizeComputationExpression="1" backgroundStyle="GradientTopToBottom" foregroundColor="255,255,255">
+        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Vocabularies']/@ownedRepresentations[name='Vocabulary%20Diagram']/@defaultLayer/@containerMappings[name='Concept']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Vocabularies']/@ownedRepresentations[name='Vocabulary%20Diagram']/@defaultLayer/@containerMappings[name='Concept']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_Mt9QIthNEeyWRq-3hXYQog" name="Model" tooltipText="Model" outgoingEdges="_Mv3UodhNEeyWRq-3hXYQog">
+      <target xmi:type="oml:Concept" href="src/main/oml/openmodelica.org/openmodelica/modelica.oml#Model"/>
+      <semanticElements xmi:type="oml:Concept" href="src/main/oml/openmodelica.org/openmodelica/modelica.oml#Model"/>
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_Mt93MNhNEeyWRq-3hXYQog" labelSize="12" iconPath="/io.opencaesar.rosetta.sirius.viewpoint/icons/c-icon.png" borderSize="1" borderSizeComputationExpression="1" backgroundStyle="GradientTopToBottom" foregroundColor="255,255,255">
+        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Vocabularies']/@ownedRepresentations[name='Vocabulary%20Diagram']/@defaultLayer/@containerMappings[name='Concept']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Vocabularies']/@ownedRepresentations[name='Vocabulary%20Diagram']/@defaultLayer/@containerMappings[name='Concept']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_Mt-eQdhNEeyWRq-3hXYQog" name="Connector" tooltipText="Connector" outgoingEdges="_Mv37sthNEeyWRq-3hXYQog">
+      <target xmi:type="oml:Concept" href="src/main/oml/openmodelica.org/openmodelica/modelica.oml#Connector"/>
+      <semanticElements xmi:type="oml:Concept" href="src/main/oml/openmodelica.org/openmodelica/modelica.oml#Connector"/>
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_Mt_sYNhNEeyWRq-3hXYQog" labelSize="12" iconPath="/io.opencaesar.rosetta.sirius.viewpoint/icons/c-icon.png" borderSize="1" borderSizeComputationExpression="1" backgroundStyle="GradientTopToBottom" foregroundColor="255,255,255">
+        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Vocabularies']/@ownedRepresentations[name='Vocabulary%20Diagram']/@defaultLayer/@containerMappings[name='Concept']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Vocabularies']/@ownedRepresentations[name='Vocabulary%20Diagram']/@defaultLayer/@containerMappings[name='Concept']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_MuATcdhNEeyWRq-3hXYQog" name="Function" tooltipText="Function" outgoingEdges="_Mv37tdhNEeyWRq-3hXYQog">
+      <target xmi:type="oml:Concept" href="src/main/oml/openmodelica.org/openmodelica/modelica.oml#Function"/>
+      <semanticElements xmi:type="oml:Concept" href="src/main/oml/openmodelica.org/openmodelica/modelica.oml#Function"/>
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_MuBhkNhNEeyWRq-3hXYQog" labelSize="12" iconPath="/io.opencaesar.rosetta.sirius.viewpoint/icons/c-icon.png" borderSize="1" borderSizeComputationExpression="1" backgroundStyle="GradientTopToBottom" foregroundColor="255,255,255">
+        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Vocabularies']/@ownedRepresentations[name='Vocabulary%20Diagram']/@defaultLayer/@containerMappings[name='Concept']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Vocabularies']/@ownedRepresentations[name='Vocabulary%20Diagram']/@defaultLayer/@containerMappings[name='Concept']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_Mun-gNhNEeyWRq-3hXYQog" name="Namespace" tooltipText="Namespace" outgoingEdges="_MvW-UNhNEeyWRq-3hXYQog _Mv2GgNhNEeyWRq-3hXYQog" incomingEdges="_Mv2tkdhNEeyWRq-3hXYQog">
+      <target xmi:type="oml:Aspect" href="src/main/oml/openmodelica.org/openmodelica/modelica.oml#Namespace"/>
+      <semanticElements xmi:type="oml:Aspect" href="src/main/oml/openmodelica.org/openmodelica/modelica.oml#Namespace"/>
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_MupMoNhNEeyWRq-3hXYQog" labelSize="12" iconPath="/io.opencaesar.rosetta.sirius.viewpoint/icons/a-icon.png" borderSize="1" borderSizeComputationExpression="1" backgroundStyle="GradientTopToBottom" foregroundColor="255,255,255">
+        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Vocabularies']/@ownedRepresentations[name='Vocabulary%20Diagram']/@defaultLayer/@containerMappings[name='Aspect']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Vocabularies']/@ownedRepresentations[name='Vocabulary%20Diagram']/@defaultLayer/@containerMappings[name='Aspect']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_MuqawNhNEeyWRq-3hXYQog" name="Named" tooltipText="Named" incomingEdges="_MvW-UNhNEeyWRq-3hXYQog _Mv2GgNhNEeyWRq-3hXYQog _Mv4ixdhNEeyWRq-3hXYQog">
+      <target xmi:type="oml:Aspect" href="src/main/oml/openmodelica.org/openmodelica/modelica.oml#Named"/>
+      <semanticElements xmi:type="oml:Aspect" href="src/main/oml/openmodelica.org/openmodelica/modelica.oml#Named"/>
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_Mu0y0NhNEeyWRq-3hXYQog" labelSize="12" iconPath="/io.opencaesar.rosetta.sirius.viewpoint/icons/a-icon.png" borderSize="1" borderSizeComputationExpression="1" backgroundStyle="GradientTopToBottom" foregroundColor="255,255,255">
+        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Vocabularies']/@ownedRepresentations[name='Vocabulary%20Diagram']/@defaultLayer/@containerMappings[name='Aspect']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Vocabularies']/@ownedRepresentations[name='Vocabulary%20Diagram']/@defaultLayer/@containerMappings[name='Aspect']"/>
+      <ownedElements xmi:type="diagram:DNodeListElement" uid="_Mu3PENhNEeyWRq-3hXYQog" name="hasName : xsd:string [0..1]" tooltipText="hasName : xsd:string [0..1]">
+        <target xmi:type="oml:ScalarProperty" href="src/main/oml/openmodelica.org/openmodelica/modelica.oml#hasName"/>
+        <semanticElements xmi:type="oml:ScalarProperty" href="src/main/oml/openmodelica.org/openmodelica/modelica.oml#hasName"/>
+        <ownedStyle xmi:type="diagram:Square" uid="_Mu32INhNEeyWRq-3hXYQog" labelSize="12" showIcon="false" labelAlignment="LEFT" labelPosition="node">
+          <description xmi:type="style:SquareDescription" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Vocabularies']/@ownedRepresentations[name='Vocabulary%20Diagram']/@defaultLayer/@containerMappings[name='Aspect']/@subNodeMappings[name='Properties']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Vocabularies']/@ownedRepresentations[name='Vocabulary%20Diagram']/@defaultLayer/@containerMappings[name='Aspect']/@subNodeMappings[name='Properties']"/>
+      </ownedElements>
+      <ownedElements xmi:type="diagram:DNodeListElement" uid="_Mu4dMNhNEeyWRq-3hXYQog" name="hasComment : xsd:string" tooltipText="hasComment : xsd:string">
+        <target xmi:type="oml:ScalarProperty" href="src/main/oml/openmodelica.org/openmodelica/modelica.oml#hasComment"/>
+        <semanticElements xmi:type="oml:ScalarProperty" href="src/main/oml/openmodelica.org/openmodelica/modelica.oml#hasComment"/>
+        <ownedStyle xmi:type="diagram:Square" uid="_Mu6SYNhNEeyWRq-3hXYQog" labelSize="12" showIcon="false" labelAlignment="LEFT" labelPosition="node">
+          <description xmi:type="style:SquareDescription" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Vocabularies']/@ownedRepresentations[name='Vocabulary%20Diagram']/@defaultLayer/@containerMappings[name='Aspect']/@subNodeMappings[name='Properties']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Vocabularies']/@ownedRepresentations[name='Vocabulary%20Diagram']/@defaultLayer/@containerMappings[name='Aspect']/@subNodeMappings[name='Properties']"/>
+      </ownedElements>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_Mu_K4NhNEeyWRq-3hXYQog" name="Prefix" tooltipText="Prefix">
+      <target xmi:type="oml:EnumeratedScalar" href="src/main/oml/openmodelica.org/openmodelica/modelica.oml#Prefix"/>
+      <semanticElements xmi:type="oml:EnumeratedScalar" href="src/main/oml/openmodelica.org/openmodelica/modelica.oml#Prefix"/>
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_Mu_x8NhNEeyWRq-3hXYQog" labelSize="12" iconPath="/io.opencaesar.rosetta.sirius.viewpoint/icons/e-icon.png" borderSize="1" borderSizeComputationExpression="1" backgroundStyle="GradientTopToBottom" foregroundColor="255,255,255">
+        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Vocabularies']/@ownedRepresentations[name='Vocabulary%20Diagram']/@defaultLayer/@containerMappings[name='EnumeratedScalar']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Vocabularies']/@ownedRepresentations[name='Vocabulary%20Diagram']/@defaultLayer/@containerMappings[name='EnumeratedScalar']"/>
+      <ownedElements xmi:type="diagram:DNodeListElement" uid="_MvEDYNhNEeyWRq-3hXYQog" name="&quot;input&quot;" tooltipText="&quot;input&quot;">
+        <target xmi:type="oml:QuotedLiteral" href="src/main/oml/openmodelica.org/openmodelica/modelica.oml#//@ownedStatements.21/@literals.0"/>
+        <semanticElements xmi:type="oml:QuotedLiteral" href="src/main/oml/openmodelica.org/openmodelica/modelica.oml#//@ownedStatements.21/@literals.0"/>
+        <ownedStyle xmi:type="diagram:Square" uid="_MvEqcNhNEeyWRq-3hXYQog" labelSize="12" showIcon="false" labelAlignment="LEFT" labelPosition="node">
+          <description xmi:type="style:SquareDescription" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Vocabularies']/@ownedRepresentations[name='Vocabulary%20Diagram']/@defaultLayer/@containerMappings[name='EnumeratedScalar']/@subNodeMappings[name='Literals']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Vocabularies']/@ownedRepresentations[name='Vocabulary%20Diagram']/@defaultLayer/@containerMappings[name='EnumeratedScalar']/@subNodeMappings[name='Literals']"/>
+      </ownedElements>
+      <ownedElements xmi:type="diagram:DNodeListElement" uid="_MvFRgNhNEeyWRq-3hXYQog" name="&quot;output&quot;" tooltipText="&quot;output&quot;">
+        <target xmi:type="oml:QuotedLiteral" href="src/main/oml/openmodelica.org/openmodelica/modelica.oml#//@ownedStatements.21/@literals.1"/>
+        <semanticElements xmi:type="oml:QuotedLiteral" href="src/main/oml/openmodelica.org/openmodelica/modelica.oml#//@ownedStatements.21/@literals.1"/>
+        <ownedStyle xmi:type="diagram:Square" uid="_MvHGsNhNEeyWRq-3hXYQog" labelSize="12" showIcon="false" labelAlignment="LEFT" labelPosition="node">
+          <description xmi:type="style:SquareDescription" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Vocabularies']/@ownedRepresentations[name='Vocabulary%20Diagram']/@defaultLayer/@containerMappings[name='EnumeratedScalar']/@subNodeMappings[name='Literals']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Vocabularies']/@ownedRepresentations[name='Vocabulary%20Diagram']/@defaultLayer/@containerMappings[name='EnumeratedScalar']/@subNodeMappings[name='Literals']"/>
+      </ownedElements>
+      <ownedElements xmi:type="diagram:DNodeListElement" uid="_MvHGsdhNEeyWRq-3hXYQog" name="&quot;parameter&quot;" tooltipText="&quot;parameter&quot;">
+        <target xmi:type="oml:QuotedLiteral" href="src/main/oml/openmodelica.org/openmodelica/modelica.oml#//@ownedStatements.21/@literals.2"/>
+        <semanticElements xmi:type="oml:QuotedLiteral" href="src/main/oml/openmodelica.org/openmodelica/modelica.oml#//@ownedStatements.21/@literals.2"/>
+        <ownedStyle xmi:type="diagram:Square" uid="_MvHtwNhNEeyWRq-3hXYQog" labelSize="12" showIcon="false" labelAlignment="LEFT" labelPosition="node">
+          <description xmi:type="style:SquareDescription" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Vocabularies']/@ownedRepresentations[name='Vocabulary%20Diagram']/@defaultLayer/@containerMappings[name='EnumeratedScalar']/@subNodeMappings[name='Literals']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Vocabularies']/@ownedRepresentations[name='Vocabulary%20Diagram']/@defaultLayer/@containerMappings[name='EnumeratedScalar']/@subNodeMappings[name='Literals']"/>
+      </ownedElements>
+      <ownedElements xmi:type="diagram:DNodeListElement" uid="_MvHtwdhNEeyWRq-3hXYQog" name="&quot;constant&quot;" tooltipText="&quot;constant&quot;">
+        <target xmi:type="oml:QuotedLiteral" href="src/main/oml/openmodelica.org/openmodelica/modelica.oml#//@ownedStatements.21/@literals.3"/>
+        <semanticElements xmi:type="oml:QuotedLiteral" href="src/main/oml/openmodelica.org/openmodelica/modelica.oml#//@ownedStatements.21/@literals.3"/>
+        <ownedStyle xmi:type="diagram:Square" uid="_MvIU0NhNEeyWRq-3hXYQog" labelSize="12" showIcon="false" labelAlignment="LEFT" labelPosition="node">
+          <description xmi:type="style:SquareDescription" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Vocabularies']/@ownedRepresentations[name='Vocabulary%20Diagram']/@defaultLayer/@containerMappings[name='EnumeratedScalar']/@subNodeMappings[name='Literals']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Vocabularies']/@ownedRepresentations[name='Vocabulary%20Diagram']/@defaultLayer/@containerMappings[name='EnumeratedScalar']/@subNodeMappings[name='Literals']"/>
+      </ownedElements>
+      <ownedElements xmi:type="diagram:DNodeListElement" uid="_MvIU0dhNEeyWRq-3hXYQog" name="&quot;replaceable&quot;" tooltipText="&quot;replaceable&quot;">
+        <target xmi:type="oml:QuotedLiteral" href="src/main/oml/openmodelica.org/openmodelica/modelica.oml#//@ownedStatements.21/@literals.4"/>
+        <semanticElements xmi:type="oml:QuotedLiteral" href="src/main/oml/openmodelica.org/openmodelica/modelica.oml#//@ownedStatements.21/@literals.4"/>
+        <ownedStyle xmi:type="diagram:Square" uid="_MvIU0thNEeyWRq-3hXYQog" labelSize="12" showIcon="false" labelAlignment="LEFT" labelPosition="node">
+          <description xmi:type="style:SquareDescription" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Vocabularies']/@ownedRepresentations[name='Vocabulary%20Diagram']/@defaultLayer/@containerMappings[name='EnumeratedScalar']/@subNodeMappings[name='Literals']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Vocabularies']/@ownedRepresentations[name='Vocabulary%20Diagram']/@defaultLayer/@containerMappings[name='EnumeratedScalar']/@subNodeMappings[name='Literals']"/>
+      </ownedElements>
+      <ownedElements xmi:type="diagram:DNodeListElement" uid="_MvIU09hNEeyWRq-3hXYQog" name="&quot;flow&quot;" tooltipText="&quot;flow&quot;">
+        <target xmi:type="oml:QuotedLiteral" href="src/main/oml/openmodelica.org/openmodelica/modelica.oml#//@ownedStatements.21/@literals.5"/>
+        <semanticElements xmi:type="oml:QuotedLiteral" href="src/main/oml/openmodelica.org/openmodelica/modelica.oml#//@ownedStatements.21/@literals.5"/>
+        <ownedStyle xmi:type="diagram:Square" uid="_MvI74NhNEeyWRq-3hXYQog" labelSize="12" showIcon="false" labelAlignment="LEFT" labelPosition="node">
+          <description xmi:type="style:SquareDescription" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Vocabularies']/@ownedRepresentations[name='Vocabulary%20Diagram']/@defaultLayer/@containerMappings[name='EnumeratedScalar']/@subNodeMappings[name='Literals']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Vocabularies']/@ownedRepresentations[name='Vocabulary%20Diagram']/@defaultLayer/@containerMappings[name='EnumeratedScalar']/@subNodeMappings[name='Literals']"/>
+      </ownedElements>
+      <ownedElements xmi:type="diagram:DNodeListElement" uid="_MvI74dhNEeyWRq-3hXYQog" name="&quot;stream&quot;" tooltipText="&quot;stream&quot;">
+        <target xmi:type="oml:QuotedLiteral" href="src/main/oml/openmodelica.org/openmodelica/modelica.oml#//@ownedStatements.21/@literals.6"/>
+        <semanticElements xmi:type="oml:QuotedLiteral" href="src/main/oml/openmodelica.org/openmodelica/modelica.oml#//@ownedStatements.21/@literals.6"/>
+        <ownedStyle xmi:type="diagram:Square" uid="_MvI74thNEeyWRq-3hXYQog" labelSize="12" showIcon="false" labelAlignment="LEFT" labelPosition="node">
+          <description xmi:type="style:SquareDescription" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Vocabularies']/@ownedRepresentations[name='Vocabulary%20Diagram']/@defaultLayer/@containerMappings[name='EnumeratedScalar']/@subNodeMappings[name='Literals']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Vocabularies']/@ownedRepresentations[name='Vocabulary%20Diagram']/@defaultLayer/@containerMappings[name='EnumeratedScalar']/@subNodeMappings[name='Literals']"/>
+      </ownedElements>
+      <ownedElements xmi:type="diagram:DNodeListElement" uid="_MvI749hNEeyWRq-3hXYQog" name="&quot;inner&quot;" tooltipText="&quot;inner&quot;">
+        <target xmi:type="oml:QuotedLiteral" href="src/main/oml/openmodelica.org/openmodelica/modelica.oml#//@ownedStatements.21/@literals.7"/>
+        <semanticElements xmi:type="oml:QuotedLiteral" href="src/main/oml/openmodelica.org/openmodelica/modelica.oml#//@ownedStatements.21/@literals.7"/>
+        <ownedStyle xmi:type="diagram:Square" uid="_MvJi8NhNEeyWRq-3hXYQog" labelSize="12" showIcon="false" labelAlignment="LEFT" labelPosition="node">
+          <description xmi:type="style:SquareDescription" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Vocabularies']/@ownedRepresentations[name='Vocabulary%20Diagram']/@defaultLayer/@containerMappings[name='EnumeratedScalar']/@subNodeMappings[name='Literals']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Vocabularies']/@ownedRepresentations[name='Vocabulary%20Diagram']/@defaultLayer/@containerMappings[name='EnumeratedScalar']/@subNodeMappings[name='Literals']"/>
+      </ownedElements>
+      <ownedElements xmi:type="diagram:DNodeListElement" uid="_MvKKANhNEeyWRq-3hXYQog" name="&quot;outer&quot;" tooltipText="&quot;outer&quot;">
+        <target xmi:type="oml:QuotedLiteral" href="src/main/oml/openmodelica.org/openmodelica/modelica.oml#//@ownedStatements.21/@literals.8"/>
+        <semanticElements xmi:type="oml:QuotedLiteral" href="src/main/oml/openmodelica.org/openmodelica/modelica.oml#//@ownedStatements.21/@literals.8"/>
+        <ownedStyle xmi:type="diagram:Square" uid="_MvKKAdhNEeyWRq-3hXYQog" labelSize="12" showIcon="false" labelAlignment="LEFT" labelPosition="node">
+          <description xmi:type="style:SquareDescription" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Vocabularies']/@ownedRepresentations[name='Vocabulary%20Diagram']/@defaultLayer/@containerMappings[name='EnumeratedScalar']/@subNodeMappings[name='Literals']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Vocabularies']/@ownedRepresentations[name='Vocabulary%20Diagram']/@defaultLayer/@containerMappings[name='EnumeratedScalar']/@subNodeMappings[name='Literals']"/>
+      </ownedElements>
+      <ownedElements xmi:type="diagram:DNodeListElement" uid="_MvKxENhNEeyWRq-3hXYQog" name="&quot;innerouter&quot;" tooltipText="&quot;innerouter&quot;">
+        <target xmi:type="oml:QuotedLiteral" href="src/main/oml/openmodelica.org/openmodelica/modelica.oml#//@ownedStatements.21/@literals.9"/>
+        <semanticElements xmi:type="oml:QuotedLiteral" href="src/main/oml/openmodelica.org/openmodelica/modelica.oml#//@ownedStatements.21/@literals.9"/>
+        <ownedStyle xmi:type="diagram:Square" uid="_MvKxEdhNEeyWRq-3hXYQog" labelSize="12" showIcon="false" labelAlignment="LEFT" labelPosition="node">
+          <description xmi:type="style:SquareDescription" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Vocabularies']/@ownedRepresentations[name='Vocabulary%20Diagram']/@defaultLayer/@containerMappings[name='EnumeratedScalar']/@subNodeMappings[name='Literals']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Vocabularies']/@ownedRepresentations[name='Vocabulary%20Diagram']/@defaultLayer/@containerMappings[name='EnumeratedScalar']/@subNodeMappings[name='Literals']"/>
+      </ownedElements>
+      <ownedElements xmi:type="diagram:DNodeListElement" uid="_MvKxEthNEeyWRq-3hXYQog" name="&quot;final&quot;" tooltipText="&quot;final&quot;">
+        <target xmi:type="oml:QuotedLiteral" href="src/main/oml/openmodelica.org/openmodelica/modelica.oml#//@ownedStatements.21/@literals.10"/>
+        <semanticElements xmi:type="oml:QuotedLiteral" href="src/main/oml/openmodelica.org/openmodelica/modelica.oml#//@ownedStatements.21/@literals.10"/>
+        <ownedStyle xmi:type="diagram:Square" uid="_MvKxE9hNEeyWRq-3hXYQog" labelSize="12" showIcon="false" labelAlignment="LEFT" labelPosition="node">
+          <description xmi:type="style:SquareDescription" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Vocabularies']/@ownedRepresentations[name='Vocabulary%20Diagram']/@defaultLayer/@containerMappings[name='EnumeratedScalar']/@subNodeMappings[name='Literals']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Vocabularies']/@ownedRepresentations[name='Vocabulary%20Diagram']/@defaultLayer/@containerMappings[name='EnumeratedScalar']/@subNodeMappings[name='Literals']"/>
+      </ownedElements>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_MvNNUNhNEeyWRq-3hXYQog" name="extendsClass" sourceNode="_Mt3JgthNEeyWRq-3hXYQog" targetNode="_Mt3JgthNEeyWRq-3hXYQog">
+      <target xmi:type="oml:RelationEntity" href="src/main/oml/openmodelica.org/openmodelica/modelica.oml#extendsClassRelation"/>
+      <semanticElements xmi:type="oml:RelationEntity" href="src/main/oml/openmodelica.org/openmodelica/modelica.oml#extendsClassRelation"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_MvN0YNhNEeyWRq-3hXYQog" size="2" routingStyle="manhattan">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Vocabularies']/@ownedRepresentations[name='Vocabulary%20Diagram']/@defaultLayer/@edgeMappings[name='RelationEntity']/@style"/>
+        <beginLabelStyle xmi:type="diagram:BeginLabelStyle" uid="_MvN0YdhNEeyWRq-3hXYQog" labelSize="12" showIcon="false"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_MvN0Y9hNEeyWRq-3hXYQog" labelSize="12" showIcon="false"/>
+        <endLabelStyle xmi:type="diagram:EndLabelStyle" uid="_MvN0YthNEeyWRq-3hXYQog" labelSize="12" showIcon="false"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Vocabularies']/@ownedRepresentations[name='Vocabulary%20Diagram']/@defaultLayer/@edgeMappings[name='RelationEntity']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_MvW-UNhNEeyWRq-3hXYQog" name="contains" sourceNode="_Mun-gNhNEeyWRq-3hXYQog" targetNode="_MuqawNhNEeyWRq-3hXYQog">
+      <target xmi:type="oml:RelationEntity" href="src/main/oml/openmodelica.org/openmodelica/modelica.oml#Contains"/>
+      <semanticElements xmi:type="oml:RelationEntity" href="src/main/oml/openmodelica.org/openmodelica/modelica.oml#Contains"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_MvW-UdhNEeyWRq-3hXYQog" size="2" routingStyle="manhattan">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Vocabularies']/@ownedRepresentations[name='Vocabulary%20Diagram']/@defaultLayer/@edgeMappings[name='RelationEntity']/@style"/>
+        <beginLabelStyle xmi:type="diagram:BeginLabelStyle" uid="_MvW-UthNEeyWRq-3hXYQog" labelSize="12" showIcon="false"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_MvW-VNhNEeyWRq-3hXYQog" labelSize="12" showIcon="false"/>
+        <endLabelStyle xmi:type="diagram:EndLabelStyle" uid="_MvW-U9hNEeyWRq-3hXYQog" labelSize="12" showIcon="false"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Vocabularies']/@ownedRepresentations[name='Vocabulary%20Diagram']/@defaultLayer/@edgeMappings[name='RelationEntity']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_MvYzgNhNEeyWRq-3hXYQog" name="hasType" sourceNode="_Mt6M0dhNEeyWRq-3hXYQog" targetNode="_Mt3JgthNEeyWRq-3hXYQog">
+      <target xmi:type="oml:RelationEntity" href="src/main/oml/openmodelica.org/openmodelica/modelica.oml#hasTypeRelation"/>
+      <semanticElements xmi:type="oml:RelationEntity" href="src/main/oml/openmodelica.org/openmodelica/modelica.oml#hasTypeRelation"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_MvYzgdhNEeyWRq-3hXYQog" size="2" routingStyle="manhattan">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Vocabularies']/@ownedRepresentations[name='Vocabulary%20Diagram']/@defaultLayer/@edgeMappings[name='RelationEntity']/@style"/>
+        <beginLabelStyle xmi:type="diagram:BeginLabelStyle" uid="_MvYzgthNEeyWRq-3hXYQog" labelSize="12" showIcon="false"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_MvYzhNhNEeyWRq-3hXYQog" labelSize="12" showIcon="false"/>
+        <endLabelStyle xmi:type="diagram:EndLabelStyle" uid="_MvYzg9hNEeyWRq-3hXYQog" labelSize="12" showIcon="false"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Vocabularies']/@ownedRepresentations[name='Vocabulary%20Diagram']/@defaultLayer/@edgeMappings[name='RelationEntity']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_Mv2GgNhNEeyWRq-3hXYQog" sourceNode="_Mun-gNhNEeyWRq-3hXYQog" targetNode="_MuqawNhNEeyWRq-3hXYQog">
+      <target xmi:type="oml:SpecializationAxiom" href="src/main/oml/openmodelica.org/openmodelica/modelica.oml#//@ownedStatements.3/@ownedSpecializations.0"/>
+      <semanticElements xmi:type="oml:SpecializationAxiom" href="src/main/oml/openmodelica.org/openmodelica/modelica.oml#//@ownedStatements.3/@ownedSpecializations.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_Mv2GgdhNEeyWRq-3hXYQog" targetArrow="InputClosedArrow" size="2" routingStyle="manhattan">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Vocabularies']/@ownedRepresentations[name='Vocabulary%20Diagram']/@defaultLayer/@edgeMappings[name='SpecializationAxiom']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Vocabularies']/@ownedRepresentations[name='Vocabulary%20Diagram']/@defaultLayer/@edgeMappings[name='SpecializationAxiom']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_Mv2tkdhNEeyWRq-3hXYQog" sourceNode="_Mt3JgthNEeyWRq-3hXYQog" targetNode="_Mun-gNhNEeyWRq-3hXYQog">
+      <target xmi:type="oml:SpecializationAxiom" href="src/main/oml/openmodelica.org/openmodelica/modelica.oml#//@ownedStatements.5/@ownedSpecializations.0"/>
+      <semanticElements xmi:type="oml:SpecializationAxiom" href="src/main/oml/openmodelica.org/openmodelica/modelica.oml#//@ownedStatements.5/@ownedSpecializations.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_Mv2tkthNEeyWRq-3hXYQog" targetArrow="InputClosedArrow" size="2" routingStyle="manhattan">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Vocabularies']/@ownedRepresentations[name='Vocabulary%20Diagram']/@defaultLayer/@edgeMappings[name='SpecializationAxiom']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Vocabularies']/@ownedRepresentations[name='Vocabulary%20Diagram']/@defaultLayer/@edgeMappings[name='SpecializationAxiom']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_Mv3UodhNEeyWRq-3hXYQog" sourceNode="_Mt9QIthNEeyWRq-3hXYQog" targetNode="_Mt3JgthNEeyWRq-3hXYQog">
+      <target xmi:type="oml:SpecializationAxiom" href="src/main/oml/openmodelica.org/openmodelica/modelica.oml#//@ownedStatements.6/@ownedSpecializations.0"/>
+      <semanticElements xmi:type="oml:SpecializationAxiom" href="src/main/oml/openmodelica.org/openmodelica/modelica.oml#//@ownedStatements.6/@ownedSpecializations.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_Mv3UothNEeyWRq-3hXYQog" targetArrow="InputClosedArrow" size="2" routingStyle="manhattan">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Vocabularies']/@ownedRepresentations[name='Vocabulary%20Diagram']/@defaultLayer/@edgeMappings[name='SpecializationAxiom']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Vocabularies']/@ownedRepresentations[name='Vocabulary%20Diagram']/@defaultLayer/@edgeMappings[name='SpecializationAxiom']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_Mv3UpNhNEeyWRq-3hXYQog" sourceNode="_Mty4ENhNEeyWRq-3hXYQog" targetNode="_Mt3JgthNEeyWRq-3hXYQog">
+      <target xmi:type="oml:SpecializationAxiom" href="src/main/oml/openmodelica.org/openmodelica/modelica.oml#//@ownedStatements.7/@ownedSpecializations.0"/>
+      <semanticElements xmi:type="oml:SpecializationAxiom" href="src/main/oml/openmodelica.org/openmodelica/modelica.oml#//@ownedStatements.7/@ownedSpecializations.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_Mv3UpdhNEeyWRq-3hXYQog" targetArrow="InputClosedArrow" size="2" routingStyle="manhattan">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Vocabularies']/@ownedRepresentations[name='Vocabulary%20Diagram']/@defaultLayer/@edgeMappings[name='SpecializationAxiom']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Vocabularies']/@ownedRepresentations[name='Vocabulary%20Diagram']/@defaultLayer/@edgeMappings[name='SpecializationAxiom']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_Mv3Up9hNEeyWRq-3hXYQog" sourceNode="_Mt8CANhNEeyWRq-3hXYQog" targetNode="_Mt3JgthNEeyWRq-3hXYQog">
+      <target xmi:type="oml:SpecializationAxiom" href="src/main/oml/openmodelica.org/openmodelica/modelica.oml#//@ownedStatements.8/@ownedSpecializations.0"/>
+      <semanticElements xmi:type="oml:SpecializationAxiom" href="src/main/oml/openmodelica.org/openmodelica/modelica.oml#//@ownedStatements.8/@ownedSpecializations.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_Mv37sNhNEeyWRq-3hXYQog" targetArrow="InputClosedArrow" size="2" routingStyle="manhattan">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Vocabularies']/@ownedRepresentations[name='Vocabulary%20Diagram']/@defaultLayer/@edgeMappings[name='SpecializationAxiom']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Vocabularies']/@ownedRepresentations[name='Vocabulary%20Diagram']/@defaultLayer/@edgeMappings[name='SpecializationAxiom']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_Mv37sthNEeyWRq-3hXYQog" sourceNode="_Mt-eQdhNEeyWRq-3hXYQog" targetNode="_Mt3JgthNEeyWRq-3hXYQog">
+      <target xmi:type="oml:SpecializationAxiom" href="src/main/oml/openmodelica.org/openmodelica/modelica.oml#//@ownedStatements.9/@ownedSpecializations.0"/>
+      <semanticElements xmi:type="oml:SpecializationAxiom" href="src/main/oml/openmodelica.org/openmodelica/modelica.oml#//@ownedStatements.9/@ownedSpecializations.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_Mv37s9hNEeyWRq-3hXYQog" targetArrow="InputClosedArrow" size="2" routingStyle="manhattan">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Vocabularies']/@ownedRepresentations[name='Vocabulary%20Diagram']/@defaultLayer/@edgeMappings[name='SpecializationAxiom']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Vocabularies']/@ownedRepresentations[name='Vocabulary%20Diagram']/@defaultLayer/@edgeMappings[name='SpecializationAxiom']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_Mv37tdhNEeyWRq-3hXYQog" sourceNode="_MuATcdhNEeyWRq-3hXYQog" targetNode="_Mt3JgthNEeyWRq-3hXYQog">
+      <target xmi:type="oml:SpecializationAxiom" href="src/main/oml/openmodelica.org/openmodelica/modelica.oml#//@ownedStatements.10/@ownedSpecializations.0"/>
+      <semanticElements xmi:type="oml:SpecializationAxiom" href="src/main/oml/openmodelica.org/openmodelica/modelica.oml#//@ownedStatements.10/@ownedSpecializations.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_Mv37tthNEeyWRq-3hXYQog" targetArrow="InputClosedArrow" size="2" routingStyle="manhattan">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Vocabularies']/@ownedRepresentations[name='Vocabulary%20Diagram']/@defaultLayer/@edgeMappings[name='SpecializationAxiom']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Vocabularies']/@ownedRepresentations[name='Vocabulary%20Diagram']/@defaultLayer/@edgeMappings[name='SpecializationAxiom']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_Mv37uNhNEeyWRq-3hXYQog" sourceNode="_MtsKYNhNEeyWRq-3hXYQog" targetNode="_Mt3JgthNEeyWRq-3hXYQog">
+      <target xmi:type="oml:SpecializationAxiom" href="src/main/oml/openmodelica.org/openmodelica/modelica.oml#//@ownedStatements.11/@ownedSpecializations.0"/>
+      <semanticElements xmi:type="oml:SpecializationAxiom" href="src/main/oml/openmodelica.org/openmodelica/modelica.oml#//@ownedStatements.11/@ownedSpecializations.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_Mv4iwNhNEeyWRq-3hXYQog" targetArrow="InputClosedArrow" size="2" routingStyle="manhattan">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Vocabularies']/@ownedRepresentations[name='Vocabulary%20Diagram']/@defaultLayer/@edgeMappings[name='SpecializationAxiom']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Vocabularies']/@ownedRepresentations[name='Vocabulary%20Diagram']/@defaultLayer/@edgeMappings[name='SpecializationAxiom']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_Mv4iwthNEeyWRq-3hXYQog" sourceNode="_Mt17YdhNEeyWRq-3hXYQog" targetNode="_Mt3JgthNEeyWRq-3hXYQog">
+      <target xmi:type="oml:SpecializationAxiom" href="src/main/oml/openmodelica.org/openmodelica/modelica.oml#//@ownedStatements.12/@ownedSpecializations.0"/>
+      <semanticElements xmi:type="oml:SpecializationAxiom" href="src/main/oml/openmodelica.org/openmodelica/modelica.oml#//@ownedStatements.12/@ownedSpecializations.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_Mv4iw9hNEeyWRq-3hXYQog" targetArrow="InputClosedArrow" size="2" routingStyle="manhattan">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Vocabularies']/@ownedRepresentations[name='Vocabulary%20Diagram']/@defaultLayer/@edgeMappings[name='SpecializationAxiom']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Vocabularies']/@ownedRepresentations[name='Vocabulary%20Diagram']/@defaultLayer/@edgeMappings[name='SpecializationAxiom']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_Mv4ixdhNEeyWRq-3hXYQog" sourceNode="_Mt6M0dhNEeyWRq-3hXYQog" targetNode="_MuqawNhNEeyWRq-3hXYQog">
+      <target xmi:type="oml:SpecializationAxiom" href="src/main/oml/openmodelica.org/openmodelica/modelica.oml#//@ownedStatements.13/@ownedSpecializations.0"/>
+      <semanticElements xmi:type="oml:SpecializationAxiom" href="src/main/oml/openmodelica.org/openmodelica/modelica.oml#//@ownedStatements.13/@ownedSpecializations.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_Mv5J0NhNEeyWRq-3hXYQog" targetArrow="InputClosedArrow" size="2" routingStyle="manhattan">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Vocabularies']/@ownedRepresentations[name='Vocabulary%20Diagram']/@defaultLayer/@edgeMappings[name='SpecializationAxiom']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Vocabularies']/@ownedRepresentations[name='Vocabulary%20Diagram']/@defaultLayer/@edgeMappings[name='SpecializationAxiom']"/>
+    </ownedDiagramElements>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Vocabularies']/@ownedRepresentations[name='Vocabulary%20Diagram']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_MshswNhNEeyWRq-3hXYQog"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Vocabularies']/@ownedRepresentations[name='Vocabulary%20Diagram']/@defaultLayer"/>
+    <target xmi:type="oml:Vocabulary" href="src/main/oml/openmodelica.org/openmodelica/modelica.oml#/"/>
   </diagram:DSemanticDiagram>
 </xmi:XMI>

@@ -6,8 +6,11 @@ description bundle <http://examples/bundle#> as examples-bundle {
 	uses <http://openmodelica.org/openmodelica/bundle#>
 	
 	includes <http://examples/helloworld#>
-	
 	includes <http://examples/rlc#>
-	includes <http://examples/rlccombined#>
 	
+	includes <http://examples/primitiveTypes#>
+	includes <http://examples/ModelicaStandardLibrary#>
+	includes <http://examples/ThermoPower#>
+	includes <http://examples/rlccombined#>
+	includes <http://examples/SimplePack#>
 }

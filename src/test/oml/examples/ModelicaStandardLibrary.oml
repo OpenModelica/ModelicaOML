@@ -1,0 +1,472 @@
+@dc:title "ModelicaStandardLibrary"
+description <http://examples/ModelicaStandardLibrary#> as ModelicaStandardLibrary {
+
+	uses <http://purl.org/dc/elements/1.1/> as dc
+
+	uses <http://openmodelica.org/openmodelica/modelica#> as m
+
+    extends <http://examples/primitiveTypes#> as t
+
+    // package Modelica
+    //   package SIunits
+    //     type Angle = Real(final quantity = "Angle", final unit = "rad", displayUnit = "deg");
+    //     type Frequency = Real(final quantity = "Frequency", final unit = "Hz");
+    //     type ElectricPotential = Real(final quantity = "ElectricPotential", final unit = "V");
+    //     type Voltage = ElectricPotential;
+    //     type ElectricCurrent = Real(final quantity = "ElectricCurrent", final unit = "A");
+    //     type Current = ElectricCurrent;
+    //     type MassFlowRate = Real(quantity = "MassFlowRate", final unit = "kg/s");
+    //     type Pressure = Real(final quantity = "Pressure", final unit = "Pa", displayUnit = "bar");
+    //     type AbsolutePressure = Pressure(min = 0.0, nominal = 1e5);
+    //     type SpecificEnergy = Real(final quantity = "SpecificEnergy", final unit = "J/kg");
+    //     type SpecificEnthalpy = SpecificEnergy;
+    // 
+    //
+    
+    ci Modelica : m:Package [
+    	m:contains Modelica.SIunits
+    ]
+
+    ci Modelica.SIunits : m:Package [
+    	m:contains Modelica.SIunits.Angle
+    	m:contains Modelica.SIunits.Frequency
+    	m:contains Modelica.SIunits.ElectricPotential
+    	m:contains Modelica.SIunits.Voltage
+    	m:contains Modelica.SIunits.ElectricCurrent
+    	m:contains Modelica.SIunits.Current
+    	m:contains Modelica.SIunits.MassFlowRate
+    	m:contains Modelica.SIunits.Pressure
+    	m:contains Modelica.SIunits.AbsolutePressure
+    ]
+    
+    ci Modelica.SIunits.Voltage : m:Type [
+    	m:extendsClass Modelica.SIunits.ElectricPotential
+    ]
+
+    ci Modelica.SIunits.Current : m:Type [
+    	m:extendsClass Modelica.SIunits.ElectricCurrent
+    ]
+
+    ci Modelica.SIunits.Angle : m:Type [
+    	m:extendsClass t:Real
+    	m:contains Modelica.SIunits.Angle.quantity
+    	m:contains Modelica.SIunits.Angle.unit
+    	m:contains Modelica.SIunits.Angle.displayUnit
+    ]
+
+    ci Modelica.SIunits.Frequency : m:Type [
+    	m:extendsClass t:Real
+    	m:contains Modelica.SIunits.Frequency.quantity
+    	m:contains Modelica.SIunits.Frequency.unit
+    ]
+    
+    ci Modelica.SIunits.ElectricPotential : m:Type [
+    	m:extendsClass t:Real
+    	m:contains Modelica.SIunits.ElectricPotential.quantity
+    	m:contains Modelica.SIunits.ElectricPotential.unit
+    ]
+
+    ci Modelica.SIunits.ElectricCurrent : m:Type [
+    	m:extendsClass t:Real
+    	m:contains Modelica.SIunits.ElectricCurrent.quantity
+    	m:contains Modelica.SIunits.ElectricCurrent.unit
+    ]
+    
+    ci Modelica.SIunits.MassFlowRate : m:Type  [
+    	m:extendsClass t:Real
+    	m:contains Modelica.SIunits.MassFlowRate.quantity
+    	m:contains Modelica.SIunits.MassFlowRate.unit
+    ]
+
+    ci Modelica.SIunits.MassFlowRate.quantity : m:Component [
+    	m:hasName "quantity"
+    	m:hasInitialValue "MassFlowRate"
+    ]
+
+    ci Modelica.SIunits.MassFlowRate.unit : m:Component [
+    	m:hasName "unit"
+    	m:hasInitialValue "kg/s"
+    ]
+
+    ci Modelica.SIunits.SpecificEnergy : m:Type  [
+    	m:extendsClass t:Real
+    	m:contains Modelica.SIunits.SpecificEnergy.quantity
+    	m:contains Modelica.SIunits.SpecificEnergy.unit
+    ]
+
+    ci Modelica.SIunits.SpecificEnthalpy : m:Type  [
+    	m:extendsClass Modelica.SIunits.SpecificEnergy
+    ]
+
+    ci Modelica.SIunits.SpecificEnergy.quantity : m:Component [
+    	m:hasName "quantity"
+    	m:hasInitialValue "SpecificEnergy"
+    ]
+
+    ci Modelica.SIunits.SpecificEnergy.unit : m:Component [
+    	m:hasName "unit"
+    	m:hasInitialValue "J/kg"
+    ]
+
+    ci Modelica.SIunits.Pressure : m:Type  [
+    	m:extendsClass t:Real
+    	m:contains Modelica.SIunits.Pressure.quantity
+    	m:contains Modelica.SIunits.Pressure.unit
+    	m:contains Modelica.SIunits.Pressure.displayUnit
+    ]
+
+    ci Modelica.SIunits.Pressure.quantity : m:Component [
+    	m:hasName "quantity"
+    	m:hasInitialValue "Pressure"
+    ]
+
+    ci Modelica.SIunits.Pressure.unit : m:Component [
+    	m:hasName "unit"
+    	m:hasInitialValue "Pa"
+    ]
+
+    ci Modelica.SIunits.Pressure.displayUnit : m:Component [
+    	m:hasName "displayUnit"
+    	m:hasInitialValue "bar"
+    ]
+
+    ci Modelica.SIunits.AbsolutePressure : m:Type  [
+    	m:extendsClass Modelica.SIunits.Pressure
+    	m:contains Modelica.SIunits.AbsolutePressure.min
+    	m:contains Modelica.SIunits.AbsolutePressure.nominal
+    ]
+
+    ci Modelica.SIunits.AbsolutePressure.min : m:Component [
+    	m:hasName "min"
+    	m:hasInitialValue 0.0
+    ]
+
+    ci Modelica.SIunits.AbsolutePressure.nominal : m:Component [
+    	m:hasName "max"
+    	m:hasInitialValue 1e5
+    ]
+
+    ci Modelica.SIunits.Frequency.quantity : m:Component [
+    	m:hasName "quantity"
+    	m:hasInitialValue "Frequency"
+    ]
+
+    ci Modelica.SIunits.Frequency.unit : m:Component [
+    	m:hasName "unit"
+    	m:hasInitialValue "Hz"
+    ]
+    
+    ci Modelica.SIunits.ElectricPotential.quantity : m:Component [
+    	m:hasName "quantity"
+    	m:hasInitialValue "ElectricPotential"
+    ]
+
+    ci Modelica.SIunits.ElectricPotential.unit : m:Component [
+    	m:hasName "unit"
+    	m:hasInitialValue "V"
+    ]
+
+    ci Modelica.SIunits.ElectricCurrent.quantity : m:Component [
+    	m:hasName "quantity"
+    	m:hasInitialValue "ElectricCurrent"
+    ]
+
+    ci Modelica.SIunits.ElectricCurrent.unit : m:Component [
+    	m:hasName "unit"
+    	m:hasInitialValue "A"
+    ]
+    
+    ci Modelica.SIunits.Angle.quantity : m:Component [
+    	m:hasName "quantity"
+    	m:hasInitialValue "Angle"
+    ]
+
+    ci Modelica.SIunits.Angle.unit : m:Component [
+    	m:hasName "unit"
+    	m:hasInitialValue "V"
+    ]
+    
+    ci Modelica.SIunits.Angle.displayUnit : m:Component [
+    	m:hasName "displayUnit"
+    	m:hasInitialValue "deg"
+    ]
+
+    ci Modelica.Electrical.Analog.Interfaces.OnePort [
+    	m:contains Modelica.Electrical.Analog.Interfaces.OnePort.p
+    	m:contains Modelica.Electrical.Analog.Interfaces.OnePort.n
+    ]
+    
+    ci Modelica.Electrical.Analog.Interfaces.OnePort.p : m:Component [
+    	m:hasType Modelica.Electrical.Analog.Interfaces.PositivePin
+    ]
+
+    ci Modelica.Electrical.Analog.Interfaces.OnePort.n : m:Component [
+    	m:hasType Modelica.Electrical.Analog.Interfaces.NegativePin
+    ]
+    
+    ci Modelica.Electrical.Analog.Interfaces.NegativePin : m:Connector [
+    	m:contains Modelica.Electrical.Analog.Interfaces.NegativePin.v
+    	m:contains Modelica.Electrical.Analog.Interfaces.NegativePin.i
+    ]
+    
+    ci Modelica.Electrical.Analog.Interfaces.NegativePin.v : m:Component [
+    	m:hasName "v"
+    	m:hasType Modelica.SIunits.ElectricPotential
+    ] 
+
+    ci Modelica.Electrical.Analog.Interfaces.NegativePin.i : m:Component [
+    	m:hasName "i"
+    	m:hasPrefix "flow"
+    	m:hasType Modelica.SIunits.ElectricCurrent
+    ] 
+
+    ci Modelica.Electrical.Analog.Interfaces.PositivePin : m:Connector [
+    	m:contains Modelica.Electrical.Analog.Interfaces.PositivePin.v
+    	m:contains Modelica.Electrical.Analog.Interfaces.PositivePin.i
+    ]    
+
+    ci Modelica.Electrical.Analog.Interfaces.PositivePin.v : m:Component [
+    	m:hasName "v"
+    	m:hasType Modelica.SIunits.ElectricPotential
+    ] 
+
+    ci Modelica.Electrical.Analog.Interfaces.PositivePin.i : m:Component [
+    	m:hasName "i"
+    	m:hasPrefix "flow"
+    	m:hasType Modelica.SIunits.ElectricCurrent
+    ]
+
+    ci Modelica.Electrical.Analog.Sources.SineVoltage : m:Model [
+		m:contains Modelica.Electrical.Analog.Sources.SineVoltage.V
+		m:contains Modelica.Electrical.Analog.Sources.SineVoltage.phase
+		m:contains Modelica.Electrical.Analog.Sources.SineVoltage.freqHz
+        // from extends Interfaces.VoltageSource(redeclare Modelica.Blocks.Sources.Sine signalSource(final amplitude = V, final freqHz = freqHz, final phase = phase));
+        //   from extends OnePort
+	    m:contains Modelica.Electrical.Analog.Sources.SineVoltage.v
+		m:contains Modelica.Electrical.Analog.Sources.SineVoltage.i
+		m:contains Modelica.Electrical.Analog.Sources.SineVoltage.p
+		m:contains Modelica.Electrical.Analog.Sources.SineVoltage.n
+//		//  from Interfaces.VoltageSource
+		//m:contains Modelica.Electrical.Analog.Sources.SineVoltage.offset
+		//m:contains Modelica.Electrical.Analog.Sources.SineVoltage.startTime
+		//m:contains Modelica.Electrical.Analog.Sources.SineVoltage.signalSource
+    ]    
+    
+    ci Modelica.Electrical.Analog.Sources.SineVoltage.p : m:Component [
+    	m:hasType Modelica.Electrical.Analog.Interfaces.PositivePin
+    ]
+    
+    ci Modelica.Electrical.Analog.Sources.SineVoltage.n : m:Component [
+    	m:hasType Modelica.Electrical.Analog.Interfaces.NegativePin
+    ]
+    
+    ci Modelica.Electrical.Analog.Sources.SineVoltage.V : m:Component [
+    	m:hasName "V"
+    	m:hasPrefix "parameter"
+        m:hasInitialValue 1.0
+        m:hasComment "Amplitude of sine wave"
+        m:hasType Modelica.SIunits.ElectricPotential
+    ]
+    	
+	ci Modelica.Electrical.Analog.Sources.SineVoltage.phase [
+		m:hasName "phase"
+		m:hasPrefix "parameter" 
+		m:hasInitialValue 0.0
+		m:hasComment "Phase of sine wave"
+		m:hasType Modelica.SIunits.Angle
+	]
+
+	ci Modelica.Electrical.Analog.Sources.SineVoltage.freqHz : m:Component [
+		m:hasName "freqHz"
+		m:hasPrefix "parameter"
+		m:hasInitialValue 50.0
+		m:hasComment "Frequency of sine wave"
+		m:hasType Modelica.SIunits.Frequency
+	]
+
+	ci Modelica.Electrical.Analog.Sources.SineVoltage.v : m:Component [
+		m:hasName "v"
+		m:hasComment "Voltage drop of the two pins (= p.v - n.v)"
+		m:hasType t:Real
+	]
+
+	ci Modelica.Electrical.Analog.Sources.SineVoltage.i : m:Component [
+		m:hasName "i" 
+		m:hasComment "Current flowing from pin p to pin n"
+	    m:hasType t:Real
+	]
+//
+//	ci Modelica.Electrical.Analog.Sources.SineVoltage.p : m:Connector [
+//		m:hasName "p"
+//		m:contains Modelica.Electrical.Analog.Sources.SineVoltage.p.v
+//		m:contains Modelica.Electrical.Analog.Sources.SineVoltage.p.i
+//	]
+//
+//	ci Modelica.Electrical.Analog.Sources.SineVoltage.p.v : m:Component [
+//		m:hasName "v"
+//		m:hasType m:Real [
+//			m:hasQuantity "ElectricPotential"
+//			m:hasUnit "V"
+//		]
+//		m:hasComment "Potential at the pin"
+//	]
+//
+//	ci Modelica.Electrical.Analog.Sources.SineVoltage.p.i : m:Component [
+//		m:hasName "i"
+//		m:hasPrefix "flow"
+//		m:hasType m:Real [
+//			m:hasQuantity "ElectricCurrent"
+//			m:hasUnit "A"
+//		]
+//		m:hasComment "Current flowing into the pin"
+//	]
+//
+//	ci Modelica.Electrical.Analog.Sources.SineVoltage.n : m:Connector [
+//		m:hasName "n"
+//		m:contains Modelica.Electrical.Analog.Sources.SineVoltage.n.v
+//		m:contains Modelica.Electrical.Analog.Sources.SineVoltage.n.i
+//	]
+//
+//	ci Modelica.Electrical.Analog.Sources.SineVoltage.n.v : m:Component [
+//		m:hasName "v"
+//		m:hasType m:Real [
+//			m:hasQuantity "ElectricPotential"
+//			m:hasUnit "V"
+//		]
+//		m:hasComment "Potential at the pin"
+//	]
+//
+//	ci Modelica.Electrical.Analog.Sources.SineVoltage.n.i : m:Component [
+//		m:hasName "i"
+//		m:hasPrefix "flow"
+//		m:hasType m:Real [
+//			m:hasQuantity "ElectricCurrent"
+//			m:hasUnit "A"
+//		]
+//		m:hasComment "Current flowing into the pin"
+//	]
+//
+//	ci Modelica.Electrical.Analog.Sources.SineVoltage.offset : m:Component [
+//		m:hasName "offset"
+//		m:hasPrefix "parameter"
+//		m:hasType m:Real [
+//			m:hasQuantity "ElectricPotential"
+//			m:hasUnit "V"
+//		]
+//		m:hasComment "Voltage offset"
+//	]
+//
+//	ci Modelica.Electrical.Analog.Sources.SineVoltage.startTime : m:Component [
+//		m:hasName "startTime"
+//		m:hasPrefix "parameter"
+//		m:hasInitialValue 0.0
+//		m:hasType m:Real [
+//			m:hasQuantity "Time"
+//			m:hasUnit "s"
+//		]
+//		m:hasComment "Time offset"
+//	]
+//
+//	ci Modelica.Electrical.Analog.Sources.SineVoltage.signalSource : m:Model [
+//		m:hasName "signalSource"
+//		m:contains Modelica.Electrical.Analog.Sources.SineVoltage.signalSource.amplitude
+//		m:contains Modelica.Electrical.Analog.Sources.SineVoltage.signalSource.freqHz
+//		m:contains Modelica.Electrical.Analog.Sources.SineVoltage.signalSource.phase
+//		m:contains Modelica.Electrical.Analog.Sources.SineVoltage.signalSource.y
+//		m:contains Modelica.Electrical.Analog.Sources.SineVoltage.signalSource.offset
+//		m:contains Modelica.Electrical.Analog.Sources.SineVoltage.signalSource.startTime
+//	]
+//
+//	ci Modelica.Electrical.Analog.Sources.SineVoltage.signalSource.amplitude : m:Component [
+//		m:hasName "amplitude"
+//		m:hasPrefix "final"
+//		m:hasPrefix "parameter"
+//		m:hasType m:Real [
+//			m:hasQuantity "ElectricPotential"
+//			m:hasUnit "V"
+//			m:hasStartDecimal 1.0
+//		]
+//		m:hasInitialValue 1.0 // = sineVoltage.V
+//		m:hasComment "Amplitude of sine wave"
+//	]
+//
+//	ci Modelica.Electrical.Analog.Sources.SineVoltage.signalSource.freqHz : m:Component [
+//		m:hasName "freqHz"
+//		m:hasPrefix "final"
+//		m:hasPrefix "parameter"
+//		m:hasType m:Real [
+//			m:hasQuantity "Frequency"
+//			m:hasUnit "Hz"
+//			m:hasStartDecimal 1.0
+//		]
+//		m:hasInitialValue 50.0 // = sineVoltage.freqHz
+//		m:hasComment "Frequency of sine wave"
+//	]
+//
+//	ci Modelica.Electrical.Analog.Sources.SineVoltage.signalSource.phase : m:Component [
+//		m:hasName "phase"
+//		m:hasPrefix "final"
+//		m:hasPrefix "parameter"
+//		m:hasType m:Real [
+//			m:hasQuantity "Angle"
+//			m:hasUnit "rad"
+//			m:hasDisplayUnit "deg"
+//		]
+//		m:hasInitialValue 0.0 // = sineVoltage.phase
+//		m:hasComment "Phase of sine wave"
+//	]
+//
+//	ci Modelica.Electrical.Analog.Sources.SineVoltage.signalSource.y : m:Component [
+//		m:hasName "y"
+//		m:hasType m:Real []
+//		m:hasComment "Connector of Real output signal"
+//	]
+//
+//	ci Modelica.Electrical.Analog.Sources.SineVoltage.signalSource.offset : m:Component [
+//		m:hasName "offset"
+//		m:hasPrefix "final"
+//		m:hasPrefix "parameter"
+//		m:hasType m:Real [
+//			m:hasQuantity "ElectricPotential"
+//			m:hasUnit "V"
+//		]
+//		m:hasInitialValue 0.0 // = sineVoltage.offset
+//		m:hasComment "Offset of output signal y"
+//	]
+//
+//	ci Modelica.Electrical.Analog.Sources.SineVoltage.signalSource.startTime : m:Component [
+//		m:hasName "startTime"
+//		m:hasPrefix "final"
+//		m:hasPrefix "parameter"
+//		m:hasType m:Real [
+//			m:hasQuantity "Time"
+//			m:hasUnit "s"
+//		]
+//		m:hasInitialValue 0.0 // = sineVoltage.startTime
+//		m:hasComment "Output y = offset for time < startTime"
+//	]
+
+    ci Modelica.Electrical.Analog.Basic.Resistor : m:Model [
+    	
+    ]
+
+
+	ci Modelica.Electrical.Analog.Basic.Capacitor : m:Model [
+	]
+
+	ci Modelica.Electrical.Analog.Basic.Inductor : m:Model [
+	]
+
+	ci Modelica.Electrical.Analog.Basic.Ground : m:Model [
+		
+	]
+	
+	ci Modelica.Media.Air.DryAirNasa : m:Model [
+		
+	]
+	
+	ci Modelica.Media.Interfaces.PartialMedium : m:Package [
+		
+	]
+    
+}

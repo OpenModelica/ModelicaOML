@@ -1,0 +1,97 @@
+@dc:title "RLC Combined"
+description <http://examples/SimplePack#> as SimplePack {
+
+	uses <http://purl.org/dc/elements/1.1/> as dc
+
+	uses <http://openmodelica.org/openmodelica/modelica#> as m
+	
+	extends <http://examples/primitiveTypes#> as t
+	
+	extends <http://examples/ModelicaStandardLibrary#> as msl
+	extends <http://examples/ThermoPower#> as tp
+
+    ci PL_Lib : m:Package [
+    	m:contains PL_Lib.Experiments
+    	m:contains PL_Lib.Configurations 
+    	m:contains PL_Lib.Templates
+    	m:contains PL_Lib.Components
+    ]
+    
+    ci PL_Lib.Configurations : m:Package [
+    	m:contains PL_Lib.Configurations.PACK_simple
+    ]
+    
+    ci PL_Lib.Templates : m:Package [
+    	m:contains PL_Lib.Templates.PACK
+    ]
+    
+    ci PL_Lib.Components : m:Package [
+    	
+    ]
+
+    ci PL_Lib.Templates.PACK : m:Package [
+    	m:contains PL_Lib.Templates.PACK.PACK_simpleTemplate
+    ]
+    
+//        parameter Modelica.SIunits.MassFlowRate whex_cold "nominal (and initial) mass flow rate";
+//        parameter Modelica.SIunits.MassFlowRate whex_hot "nominal (and initial) mass flow rate";
+//        replaceable package HotFluid = Modelica.Media.Interfaces.PartialMedium annotation(choicesAllMatching = true);
+//        replaceable package ColdFluid = Modelica.Media.Interfaces.PartialMedium annotation(choicesAllMatching = true);
+//        replaceable Interfaces.CompressorBase compressor(redeclare package Medium = HotFluid, pstart_in = 100000, pstart_out = 100000, Tdes_in = 573.15, Tstart_out = 573.15) annotation(choicesAllMatching = true);
+//        replaceable Interfaces.HeatExchangerBase PHX(redeclare package ColdFluid = ColdFluid, redeclare package HotFluid = HotFluid) annotation(choicesAllMatching = true);
+//        ThermoPower.Gas.SourcePressure sourceP_BAin(redeclare package Medium = HotFluid, use_in_T = true, use_in_p0 = true);
+//        ThermoPower.Gas.SinkPressure sinkP_RA_PHXout(redeclare package Medium = ColdFluid, use_in_p0 = true);
+//        ThermoPower.Gas.SourceMassFlow sourceMassFlow_RA_PHXin(redeclare package Medium = ColdFluid, w0 = whex_cold, use_in_w0 = false, use_in_T = true);
+//        ThermoPower.Gas.SinkPressure sinkP_PACKout(redeclare package Medium = HotFluid);
+//      protected
+//        parameter Modelica.SIunits.Inertia J_shaft = 200;
+//        parameter Modelica.SIunits.AngularVelocity w0 = 523.3;
+    
+    ci PL_Lib.Templates.PACK.PACK_simpleTemplate : m:Model [
+    	m:hasClassPrefix "partial"
+//    	m:contains PL_Lib.Templates.PACK.PACK_simpleTemplate.whex_cold
+//    	m:contains PL_Lib.Templates.PACK.PACK_simpleTemplate.whex_hot
+//    	m:contains PL_Lib.Templates.PACK.PACK_simpleTemplate.HotFluid
+//    	m:contains PL_Lib.Templates.PACK.PACK_simpleTemplate.ColdFluid
+//    	m:contains PL_Lib.Templates.PACK.PACK_simpleTemplate.compressor
+//    	m:contains PL_Lib.Templates.PACK.PACK_simpleTemplate.PHX
+//    	m:contains PL_Lib.Templates.PACK.PACK_simpleTemplate.sourceP_BAin
+//    	m:contains PL_Lib.Templates.PACK.PACK_simpleTemplate.sinkP_RA_PHXout
+//    	m:contains PL_Lib.Templates.PACK.PACK_simpleTemplate.sourceMassFlow_RA_PHXin
+//    	m:contains PL_Lib.Templates.PACK.PACK_simpleTemplate.sinkP_PACKout
+//    	m:contains PL_Lib.Templates.PACK.PACK_simpleTemplate.J_shaft
+//    	m:contains PL_Lib.Templates.PACK.PACK_simpleTemplate.w0
+    ]
+    
+    ci PL_Lib.Configurations.PACK_simple : m:Model [
+    	m:extendsClass PL_Lib.Templates.PACK.PACK_simpleTemplate	
+    ]
+    
+    ci PL_Lib.Experiments : m:Package [
+    	m:contains PL_Lib.Experiments.SimplePack 
+    ]
+    
+    ci PL_Lib.Experiments.SimplePack : m:Model [
+    	m:hasName "SimplePack"
+    	m:extendsClass PL_Lib.Configurations.PACK_simple
+        m:contains PL_Lib.Experiments.SimplePack.system
+        m:contains PL_Lib.Experiments.SimplePack.HotFluid
+        m:contains PL_Lib.Experiments.SimplePack.ColdFluid
+    ]
+ 
+	ci PL_Lib.Experiments.SimplePack.system : m:Component [
+		m:hasName "system"
+		m:hasPrefix "inner"
+        m:hasType tp:ThermoPower.System
+	]
+	
+	ci PL_Lib.Experiments.SimplePack.HotFluid : m:Model [
+		m:extendsClass msl:Modelica.Media.Air.DryAirNasa
+	]
+	
+	ci PL_Lib.Experiments.SimplePack.ColdFluid : m:Model [
+		m:extendsClass msl:Modelica.Media.Air.DryAirNasa
+	]
+
+}  
+

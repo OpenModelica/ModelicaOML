@@ -1,0 +1,136 @@
+@dc:title "ThermoPower"
+description <http://examples/ThermoPower#> as ThermoPower {
+
+	uses <http://purl.org/dc/elements/1.1/> as dc
+
+	uses <http://openmodelica.org/openmodelica/modelica#> as m
+
+    extends <http://examples/primitiveTypes#> as t
+    extends <http://examples/ModelicaStandardLibrary#> as msl
+
+    ci ThermoPower : m:Package [
+    	m:contains ThermoPower.System
+    	m:contains ThermoPower.Gas
+    ]
+    
+    ci ThermoPower.Gas : m:Package [
+    	m:contains ThermoPower.Gas.Flange
+    	m:contains ThermoPower.Gas.FlangeA
+    	m:contains ThermoPower.Gas.FlangeB
+    ]
+
+    ci ThermoPower.Gas.Flange : m:Connector [
+    	m:contains ThermoPower.Gas.Flange.Medium
+    	m:contains ThermoPower.Gas.Flange.m_flow
+    	m:contains ThermoPower.Gas.Flange.p
+    	m:contains ThermoPower.Gas.Flange.h_outflow
+    	m:contains ThermoPower.Gas.Flange.Xi_outflow
+    	m:contains ThermoPower.Gas.Flange.C_outflow
+    ]
+    
+    ci ThermoPower.Gas.FlangeA : m:Connector [
+    	m:extendsClass ThermoPower.Gas.Flange
+    	m:contains ThermoPower.Gas.Flange.Medium
+    	m:contains ThermoPower.Gas.Flange.m_flow
+    	m:contains ThermoPower.Gas.Flange.p
+    	m:contains ThermoPower.Gas.Flange.h_outflow
+    	m:contains ThermoPower.Gas.Flange.Xi_outflow
+    	m:contains ThermoPower.Gas.Flange.C_outflow
+    	m:contains ThermoPower.Gas.Flange.Medium
+    ]
+
+    ci ThermoPower.Gas.FlangeB : m:Connector [
+    	m:extendsClass ThermoPower.Gas.Flange
+    	m:contains ThermoPower.Gas.Flange.Medium
+    	m:contains ThermoPower.Gas.Flange.m_flow
+    	m:contains ThermoPower.Gas.Flange.p
+    	m:contains ThermoPower.Gas.Flange.h_outflow
+    	m:contains ThermoPower.Gas.Flange.Xi_outflow
+    	m:contains ThermoPower.Gas.Flange.C_outflow
+    	m:contains ThermoPower.Gas.Flange.Medium
+    ]
+    
+    ci ThermoPower.Gas.Flange.Medium : m:Package [
+    	m:extendsClass msl:Modelica.Media.Interfaces.PartialMedium
+    	m:contains ThermoPower.Gas.Flange.Medium.MassFlowRate
+    	m:contains ThermoPower.Gas.Flange.Medium.AbsolutePressure
+    	m:contains ThermoPower.Gas.Flange.Medium.SpecificEnthalpy
+    	m:contains ThermoPower.Gas.Flange.Medium.MassFraction
+    	m:contains ThermoPower.Gas.Flange.Medium.ExtraProperty
+    ]
+    
+    // type MassFlowRate = SI.MassFlowRate(quantity = "MassFlowRate." + mediumName, min = -1.0e5, max = 1.e5) "Type for mass flow rate with medium specific attributes";
+    ci ThermoPower.Gas.Flange.Medium.MassFlowRate : m:Type [
+    	m:extendsClass msl:Modelica.SIunits.MassFlowRate
+    ]
+    
+   // type AbsolutePressure = SI.AbsolutePressure(min = 0, max = 1.e8, nominal = 1.e5, start = 1.e5) "Type for absolute pressure with medium specific attributes";
+    ci ThermoPower.Gas.Flange.Medium.AbsolutePressure : m:Type [
+    	m:extendsClass msl:Modelica.SIunits.AbsolutePressure
+    ]
+    
+    // type SpecificEnthalpy = SI.SpecificEnthalpy(min = -1.0e10, max = 1.e10, nominal = 1.e6) "Type for specific enthalpy with medium specific attributes";
+    ci ThermoPower.Gas.Flange.Medium.SpecificEnthalpy [
+    	m:extendsClass msl:Modelica.SIunits.SpecificEnthalpy
+    ]
+    
+    // type MassFraction = Real(quantity = "MassFraction", final unit = "kg/kg", min = 0, max = 1, nominal = 0.1) "Type for mass fraction with medium specific attributes";
+    ci ThermoPower.Gas.Flange.Medium.MassFraction [
+    	m:extendsClass t:Real
+//    	m:contains ThermoPower.Gas.Flange.Medium.MassFraction.quantity
+//    	m:contains ThermoPower.Gas.Flange.Medium.MassFraction.unit
+//    	m:contains ThermoPower.Gas.Flange.Medium.MassFraction.min
+//    	m:contains ThermoPower.Gas.Flange.Medium.MassFraction.max
+//    	m:contains ThermoPower.Gas.Flange.Medium.MassFraction.nominal
+    ]
+    
+    // type ExtraProperty = Real(min = 0.0, start = 1.0) "Type for unspecified, mass-specific property transported by flow";
+    ci ThermoPower.Gas.Flange.Medium.ExtraProperty [
+    	m:extendsClass t:Real
+//    	m:contains ThermoPower.Gas.Flange.Medium.ExtraProperty.min
+//      m:contains ThermoPower.Gas.Flange.Medium.ExtraProperty.start
+    ]
+    
+    ci ThermoPower.Gas.Flange.m_flow : m:Component [
+    	m:hasName "m_flow"
+    	m:hasPrefix "flow"
+    	m:hasType ThermoPower.Gas.Flange.Medium.MassFlowRate
+    ]
+    
+    ci ThermoPower.Gas.Flange.p : m:Component [
+    	m:hasName "p"
+    	m:hasType ThermoPower.Gas.Flange.Medium.AbsolutePressure
+    ]
+
+    ci ThermoPower.Gas.Flange.h_outflow : m:Component [
+    	m:hasName "h_outflow"
+    	m:hasType ThermoPower.Gas.Flange.Medium.SpecificEnthalpy
+    ]
+
+    ci ThermoPower.Gas.Flange.Xi_outflow : m:Component [
+    	m:hasName "Xi_outflow"
+    	m:hasType ThermoPower.Gas.Flange.Medium.MassFraction
+    ]
+    
+    ci ThermoPower.Gas.Flange.C_outflow : m:Component [
+    	m:hasName "C_outflow"
+    	m:hasType ThermoPower.Gas.Flange.Medium.ExtraProperty
+    ]
+
+    ci ThermoPower.System : m:Model [
+    	m:contains ThermoPower.System.allowFlowReversal
+//    	m:contains ThermoPower.System.initOpt
+//    	m:contains ThermoPower.System.p_amb
+//    	m:contains ThermoPower.System.T_amb
+//    	m:contains ThermoPower.System.T_wb
+//    	m:contains ThermoPower.System.fnom
+    ]
+
+    ci ThermoPower.System.allowFlowReversal : m:Component  [
+    	m:hasName "allowFlowReversal"
+    	m:hasPrefix "parameter"
+    	m:hasValue "true"
+    	m:hasType t:Boolean
+    ]
+    
+}
