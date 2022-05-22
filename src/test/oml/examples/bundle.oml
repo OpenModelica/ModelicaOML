@@ -13,4 +13,5 @@ description bundle <http://examples/bundle#> as examples-bundle {
 	includes <http://examples/ThermoPower#>
 	includes <http://examples/rlccombined#>
 	includes <http://examples/SimplePack#>
+	includes <http://examples/A#>
 }

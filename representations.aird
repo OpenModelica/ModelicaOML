@@ -21,6 +21,7 @@
     <semanticResources>src/test/oml/examples/ModelicaStandardLibrary.oml</semanticResources>
     <semanticResources>src/test/oml/examples/SimplePack.oml</semanticResources>
     <semanticResources>src/test/oml/examples/ThermoPower.oml</semanticResources>
+    <semanticResources>src/test/oml/examples/A.oml</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" uid="_Qng4kMM5Eey5iKANiW4k_w">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']"/>
       <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_RIF2EMM5Eey5iKANiW4k_w" name="Description Diagram" repPath="#_RHNsUMM5Eey5iKANiW4k_w" changeId="f782fc3f-9d50-4bcd-8cf9-3b0dfd0c3f23">

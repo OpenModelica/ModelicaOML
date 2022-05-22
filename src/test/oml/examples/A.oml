@@ -1,0 +1,89 @@
+@dc:title "RLC Combined"
+description <http://examples/A#> as A {
+
+	uses <http://purl.org/dc/elements/1.1/> as dc
+
+	uses <http://openmodelica.org/openmodelica/modelica#> as m
+	
+	extends <http://examples/primitiveTypes#> as t	
+
+
+//class A
+//  class B
+//    Real x = 1 + 1;
+//  end B;
+//  class C
+//    extends B(x = 4);
+//    Real y = 2 + 2;
+//  end C;
+//  B b;
+//  C c(x = 3);
+//end A;
+
+	ci A : m:Class [
+		m:hasName "A"
+		m:contains A.B
+		m:contains A.C
+		m:contains A.C_c // C(x=3)
+		m:contains A.b
+		m:contains A.c
+	]
+	
+	ci A.B : m:Class [
+		m:contains A.B.x
+	]
+	
+	ci A.B.x : m:Component [
+		m:hasName "x"
+		m:hasValue "2"
+		m:hasType t:Real
+	]
+
+	ci A.C : m:Class [
+		m:extendsClass A.B
+		m:contains A.C.x
+		m:contains A.C.y
+	]
+
+    ci A.C.x : m:Component [
+		m:hasName "x"
+		m:hasValue "4"
+		m:hasType t:Real    	
+    ]
+
+    ci A.C.y : m:Component [
+		m:hasName "y"
+		m:hasValue "4"
+		m:hasType t:Real    	
+    ]
+
+	ci A.b : m:Component [
+		m:hasName "b"
+        m:hasType A.B
+	]
+	
+	ci A.C_c : m:Class [
+		m:extendsClass A.C
+        m:contains A.C_c.x
+        m:contains A.C_c.y
+	]
+	
+    ci A.C_c.x : m:Component [
+		m:hasName "x"
+		m:hasValue "3"
+		m:hasType t:Real    	
+    ]
+
+    ci A.C_c.y : m:Component [
+		m:hasName "y"
+		m:hasValue "4"
+		m:hasType t:Real    	
+    ]
+	
+	ci A.c : m:Component [
+		m:hasName "c"
+		m:hasType A.C_c    			
+	]
+
+}  
+
