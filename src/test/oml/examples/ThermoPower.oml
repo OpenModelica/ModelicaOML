@@ -104,11 +104,13 @@ description <http://examples/ThermoPower#> as ThermoPower {
 
     ci ThermoPower.Gas.Flange.h_outflow : m:Component [
     	m:hasName "h_outflow"
+    	m:hasPrefix "stream"
     	m:hasType ThermoPower.Gas.Flange.Medium.SpecificEnthalpy
     ]
 
     ci ThermoPower.Gas.Flange.Xi_outflow : m:Component [
     	m:hasName "Xi_outflow"
+    	m:hasPrefix "stream"
     	m:hasType ThermoPower.Gas.Flange.Medium.MassFraction
     ]
     
